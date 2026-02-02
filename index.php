@@ -1,208 +1,209 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>InboundHub | Estratégia de Marketing e RevOps</title>
-  <meta name="description" content="Comunidade de Inbound Marketing focada em dados, estratégia e RevOps. Ferramentas gratuitas e networking de alto nível.">
-  
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22[http://www.w3.org/2000/svg%22](http://www.w3.org/2000/svg%22) viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InboundHub | Por Renê Sábio</title>
+    <meta name="description" content="Marketing estratégico, CRM e RevOps. Conexões reais baseadas em dados.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
-  
-  <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
-  <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
-  <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap)" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cupertino: {
+                            base: '#F5F5F7',    /* Fundo Geral */
+                            card: '#FFFFFF',    /* Cards */
+                            action: '#0071E3',  /* Botões/Links (Apple Blue) */
+                            hover: '#0077ED',   /* Hover state */
+                            text: '#1D1D1F',    /* Texto Principal */
+                            subtext: '#86868b'  /* Texto Secundário (Apple Grey) */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-    /* Design: Tech Trust Gradient */
-   .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
-    /* A11y: Foco visível */
-    *:focus-visible { outline: 2px solid #4f46e5; outline-offset: 2px; }
-  </style>
+    <style>
+        body { 
+            background-color: #F5F5F7; 
+            color: #1D1D1F;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Efeito de Glassmorphism sutil na Navegação */
+        .glass-nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        /* Sombras ultra-suaves estilo Apple */
+        .cupertino-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+        }
+        .card-hover:hover {
+            transform: scale(1.01);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased font-sans flex flex-col min-h-screen">
+<body>
 
-  <?php include 'topo.php';?>
-
-  <main>
-    <div class="hero-bg text-white pt-24 pb-32">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-        <span class="inline-block py-1 px-3 rounded bg-indigo-500/20 border border-indigo-400/30 text-indigo-200 text-xs font-bold tracking-[0.2em] uppercase mb-8">Estratégia & Dados</span>
-        
-        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-8 tracking-tight">
-          Marketing vai muito além <br>de <span class="text-indigo-400 italic">divulgar uma marca.</span>
-        </h1>
-        
-        <p class="text-lg md:text-xl text-slate-300 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-          É sobre criar conexões reais, estruturar dados e construir uma presença que faz sentido.
-          Somos o <strong>InboundHub</strong>: unimos a estratégia de Inbound à precisão do RevOps.
-        </p>
-        
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="#comunidade" class="bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-indigo-500 transition shadow-lg shadow-indigo-900/20 w-full sm:w-auto transform hover:-translate-y-1">
-            Entrar na Comunidade
-          </a>
-          <a href="#ferramentas" class="bg-white/10 border border-white/20 text-white px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition w-full sm:w-auto backdrop-blur-sm">
-            Acessar Ferramentas
-          </a>
+    <nav class="glass-nav fixed w-full top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 h-14 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-lg font-semibold tracking-tight text-cupertino-text">InboundHub</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-cupertino-subtext">
+                <a href="#proposito" class="hover:text-cupertino-action transition-colors">Propósito</a>
+                <a href="#artigos" class="hover:text-cupertino-action transition-colors">Estudos</a>
+                <a href="#ferramentas" class="hover:text-cupertino-action transition-colors">Ferramentas</a>
+            </div>
+            <a href="#comunidade" class="text-xs font-medium bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition-colors">
+                Comunidade
+            </a>
         </div>
-      </div>
-    </div>
+    </nav>
 
-    <section class="py-20 bg-white border-b border-slate-100">
-      <div class="max-w-3xl mx-auto px-6">
-        <div class="text-center mb-12">
-          <span class="text-indigo-600 font-bold tracking-widest uppercase text-xs">Nosso Propósito</span>
-          <h2 class="text-3xl font-bold text-slate-900 mt-3">Clareza em meio ao ruído</h2>
-        </div>
-        <div class="prose prose-lg text-slate-600 mx-auto leading-relaxed">
-          <p class="mb-6">
-            Vivemos uma era de excessos. Excesso de ferramentas, métricas de vaidade e promessas vazias. 
-            No meio disso tudo, o essencial se perde: <strong>o cliente.</strong>
-          </p>
-          <p class="mb-6">
-            Nossa jornada no marketing nos ensinou que "hacks" têm seu valor tático, mas são os fundamentos, 
-            o estudo e a análise de dados que constroem impérios duradouros.
-          </p>
-          <div class="border-l-4 border-indigo-500 pl-6 py-4 bg-indigo-50 rounded-r-lg">
-            <p class="font-medium text-slate-800 italic">
-              "Aqui no InboundHub, não idolatramos a complexidade. Usamos a tecnologia para simplificar processos e humanizar relações."
+    <main class="pt-32 pb-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-6 leading-tight text-cupertino-text">
+                Marketing além do <br>
+                <span class="text-cupertino-subtext">hype.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-cupertino-text font-normal max-w-2xl mx-auto mb-10 leading-relaxed">
+                Clareza em meio ao ruído. Unimos a estratégia de Inbound à precisão do RevOps.
             </p>
-          </div>
+            <div class="flex justify-center gap-4">
+                <a href="#artigos" class="text-cupertino-action text-lg font-medium hover:underline flex items-center gap-1">
+                    Ler Artigos <span>→</span>
+                </a>
+            </div>
         </div>
-      </div>
+    </main>
+
+    <section id="proposito" class="py-16 px-6">
+        <div class="max-w-3xl mx-auto bg-cupertino-card rounded-3xl p-10 md:p-14 cupertino-shadow">
+            <span class="text-xs font-bold text-cupertino-subtext uppercase tracking-widest mb-4 block">O Estrategista</span>
+            <blockquote class="text-2xl font-medium leading-relaxed mb-8 text-cupertino-text">
+                "A tecnologia não deve complicar. Minha jornada não foi construída com 'hacks', mas com a crença de que empresas crescem quando resolvem problemas reais."
+            </blockquote>
+            <div class="flex items-center gap-4">
+                <div>
+                    <p class="font-bold text-cupertino-text">Renê Sábio</p>
+                    <p class="text-sm text-cupertino-subtext">Fundador do InboundHub</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="artigos" class="py-20 bg-slate-50">
-      <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center tracking-tight">Estudos & Reflexões</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-
-          <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition duration-300 flex flex-col h-full">
-            <div class="p-8 flex flex-col h-full">
-              <span class="text-xs font-bold text-indigo-600 uppercase mb-3">Estratégia</span>
-              <h3 class="text-xl font-bold mb-3 text-slate-900 leading-snug">Inbound Marketing: A Arte da Atração</h3>
-              <p class="text-slate-600 text-sm mb-6 flex-grow">Como construir um ecossistema que educa e converte, respeitando o tempo do cliente.</p>
-              <a href="artigo-inbound.php" class="text-indigo-600 font-bold hover:text-indigo-800 text-sm flex items-center gap-2 uppercase tracking-wide mt-auto group">
-                Ler Artigo <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-8 opacity-75 grayscale hover:grayscale-0 transition duration-300">
-            <span class="text-xs font-bold text-slate-400 uppercase mb-3">Dados</span>
-            <h3 class="text-xl font-bold mb-3 text-slate-900">A Verdade sobre o CRM</h3>
-            <p class="text-slate-600 text-sm mb-4">A higiene de dados é mais importante que o software que você usa.</p>
-            <span class="inline-block bg-slate-100 text-slate-500 text-xs font-bold px-3 py-1 rounded select-none">Em breve</span>
-          </article>
-
-          <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-8 opacity-75 grayscale hover:grayscale-0 transition duration-300">
-            <span class="text-xs font-bold text-slate-400 uppercase mb-3">RevOps</span>
-            <h3 class="text-xl font-bold mb-3 text-slate-900">Operações de Receita</h3>
-            <p class="text-slate-600 text-sm mb-4">Unificando marketing, vendas e sucesso em um único organismo.</p>
-            <span class="inline-block bg-slate-100 text-slate-500 text-xs font-bold px-3 py-1 rounded select-none">Em breve</span>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="ferramentas" class="py-24 bg-slate-900 border-t border-slate-800">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl font-bold text-white mb-4">Caixa de Ferramentas</h2>
-          <p class="text-slate-400 max-w-2xl mx-auto">Utilitários práticos para o dia a dia do estrategista.</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-6">
-
-          <div class="bg-slate-800 rounded-xl p-8 border border-slate-700 hover:border-indigo-500/50 transition duration-300">
-            <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl shadow-lg shadow-indigo-900/50">✨</div>
-            <h3 class="text-xl font-bold text-white mb-2">Gerador de Briefing</h3>
-            <p class="text-slate-400 text-sm mb-6">Crie a estrutura perfeita para suas campanhas usando nossa IA.</p>
-            <button class="inline-block bg-slate-900/50 text-slate-500 border border-slate-700 text-xs font-bold px-4 py-2 rounded cursor-not-allowed uppercase tracking-wider" disabled aria-disabled="true">
-              Em breve
-            </button>
-          </div>
-
-          <div class="bg-slate-800 rounded-xl p-8 border border-slate-700 hover:border-green-500/50 transition duration-300">
-            <div class="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl shadow-lg shadow-emerald-900/50">✅</div>
-            <h3 class="text-xl font-bold text-white mb-2">Checklist de Inbound</h3>
-            <p class="text-slate-400 text-sm mb-6">Não esqueça nenhuma etapa. Do setup do CRM ao disparo de e-mail.</p>
-            <button class="inline-block bg-slate-900/50 text-slate-500 border border-slate-700 text-xs font-bold px-4 py-2 rounded cursor-not-allowed uppercase tracking-wider" disabled aria-disabled="true">
-              Em breve
-            </button>
-          </div>
-
-          <div class="bg-slate-800 rounded-xl p-8 border border-slate-700 hover:border-blue-500/50 transition duration-300">
-            <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl shadow-lg shadow-blue-900/50">🧮</div>
-            <h3 class="text-xl font-bold text-white mb-2">Calculadora de ROI</h3>
-            <p class="text-slate-400 text-sm mb-6">Prove o valor do seu trabalho com projeções financeiras claras.</p>
-            <button class="inline-block bg-slate-900/50 text-slate-500 border border-slate-700 text-xs font-bold px-4 py-2 rounded cursor-not-allowed uppercase tracking-wider" disabled aria-disabled="true">
-              Em breve
-            </button>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="comunidade" class="py-24 bg-indigo-50/50 border-t border-indigo-100">
-      <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-        
-        <div class="md:w-1/2 text-left">
-          <span class="text-indigo-600 font-bold uppercase tracking-wider text-xs mb-2 block">Networking Real</span>
-          <h2 class="text-3xl font-bold text-slate-900 mb-4">A Comunidade InboundHub</h2>
-          <p class="text-slate-600 mb-6 leading-relaxed">
-            Troque ideias, tire dúvidas técnicas e acesse vagas exclusivas.
-            Para manter o nível da discussão, o acesso é restrito.
-          </p>
-          <div class="space-y-4">
-            <div class="flex items-center text-sm font-bold text-slate-700">
-              <svg class="w-5 h-5 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Sem spam.
-            </div>
-            <div class="flex items-center text-sm font-bold text-slate-700">
-              <svg class="w-5 h-5 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Foco em técnica e mercado.
-            </div>
-          </div>
-        </div>
-
-        <div class="md:w-1/2 w-full">
-          <div class="bg-white p-6 rounded-2xl shadow-xl border border-indigo-100 relative overflow-hidden">
-            <div class="text-center mb-4">
-              <h3 class="font-bold text-slate-900">Solicitar Convite</h3>
-              <p class="text-xs text-slate-500 mt-1">Cadastro seguro via Brevo</p>
-            </div>
-
-            <div class="w-full flex justify-center bg-slate-50 rounded-lg overflow-hidden min-h-[305px]">
-              <iframe 
-                width="540" 
-                height="305" 
-                src="[https://84eb807c.sibforms.com/serve/MUIFANVwsz4F8USqjUIl5hcoZa-q9OjDzV8DJeZXur5ZyZXSRCCRLT9nxbsClV7KKNofEI7tHlWyRQCNV1IKVhYlyF5FH-Sktf8kZRybqD8yAL0Dc27iBqqwYHa3uiSLu4ykV9jClDVqF9osmxJej5eU4hw67DDg0myA1qOLgdHkamNX3xjeH0iIbE7-wEJ6XUoiDo2kOg6tDUfP](https://84eb807c.sibforms.com/serve/MUIFANVwsz4F8USqjUIl5hcoZa-q9OjDzV8DJeZXur5ZyZXSRCCRLT9nxbsClV7KKNofEI7tHlWyRQCNV1IKVhYlyF5FH-Sktf8kZRybqD8yAL0Dc27iBqqwYHa3uiSLu4ykV9jClDVqF9osmxJej5eU4hw67DDg0myA1qOLgdHkamNX3xjeH0iIbE7-wEJ6XUoiDo2kOg6tDUfP)" 
-                frameborder="0" 
-                scrolling="auto" 
-                allowfullscreen 
-                loading="lazy"
-                title="Formulário de Inscrição InboundHub"
-                style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;">
-              </iframe>
-            </div>
+    <section id="artigos" class="py-16 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-10 text-center text-cupertino-text">Estudos & Reflexões</h2>
             
-            <div class="mt-4 text-center">
-              <p class="text-[10px] text-slate-400">Seus dados estão protegidos. Zero Spam.</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <article class="bg-cupertino-card rounded-2xl p-8 cupertino-shadow card-hover border border-gray-100/50 relative overflow-hidden h-full flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-cupertino-action uppercase mb-3 block">Estratégia</span>
+                        <h3 class="text-xl font-bold mb-3 text-cupertino-text">Inbound Marketing: A Arte da Atração</h3>
+                        <p class="text-cupertino-subtext text-sm leading-relaxed mb-6">
+                            Como construir um ecossistema que educa e converte, respeitando o tempo do cliente. Por que a interrupção morreu?
+                        </p>
+                    </div>
+                    <a href="artigo-inbound.html" class="text-cupertino-action text-sm font-medium hover:underline mt-auto">Ler estudo completo</a>
+                </article>
+
+                <article class="bg-cupertino-card rounded-2xl p-8 cupertino-shadow border border-gray-100/50 opacity-60">
+                    <span class="text-xs font-bold text-gray-400 uppercase mb-3 block">Dados</span>
+                    <h3 class="text-xl font-bold mb-3 text-gray-500">A Verdade sobre o CRM</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        A higiene de dados é mais importante que o software que você usa.
+                    </p>
+                    <span class="text-xs border border-gray-300 text-gray-400 px-2 py-1 rounded">Em Breve</span>
+                </article>
+
+                <article class="bg-cupertino-card rounded-2xl p-8 cupertino-shadow border border-gray-100/50 opacity-60">
+                    <span class="text-xs font-bold text-gray-400 uppercase mb-3 block">RevOps</span>
+                    <h3 class="text-xl font-bold mb-3 text-gray-500">Operações de Receita</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Unificando marketing, vendas e sucesso em um organismo vivo.
+                    </p>
+                    <span class="text-xs border border-gray-300 text-gray-400 px-2 py-1 rounded">Em Breve</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="ferramentas" class="py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-cupertino-text">Arquitetura de Briefing</h2>
+                <p class="text-cupertino-subtext mt-2">Gere estruturas de campanha com precisão técnica.</p>
             </div>
 
-          </div>
+            <div class="bg-cupertino-card rounded-3xl p-8 md:p-12 cupertino-shadow border border-gray-100">
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-cupertino-subtext mb-2">Nicho</label>
+                        <input type="text" id="nicho" class="w-full bg-cupertino-base rounded-lg p-4 text-cupertino-text focus:outline-none focus:ring-2 focus:ring-cupertino-action transition-all" placeholder="Ex: Clínica Odontológica">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-cupertino-subtext mb-2">Público Alvo</label>
+                        <input type="text" id="publico" class="w-full bg-cupertino-base rounded-lg p-4 text-cupertino-text focus:outline-none focus:ring-2 focus:ring-cupertino-action transition-all" placeholder="Ex: Diretores de TI">
+                    </div>
+                </div>
+                
+                <button onclick="gerarPrompt()" class="w-full bg-cupertino-action hover:bg-cupertino-hover text-white font-medium py-4 rounded-xl transition-all transform active:scale-95 shadow-lg shadow-blue-500/30">
+                    Gerar Estrutura com IA
+                </button>
+
+                <div id="resultadoArea" class="hidden mt-8 pt-8 border-t border-gray-100">
+                    <p class="text-xs font-bold text-cupertino-subtext uppercase mb-3">Prompt Gerado (Copie e cole na sua IA):</p>
+                    <textarea id="promptOutput" class="w-full h-40 bg-cupertino-base rounded-xl p-4 text-sm text-cupertino-text font-mono border-none focus:ring-0" readonly></textarea>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-  </main>
 
-  <?php include 'rodape.php';?>
+    <footer class="py-12 px-6 border-t border-gray-200 mt-12 bg-cupertino-base">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-cupertino-subtext">
+            <div class="mb-4 md:mb-0">
+                &copy; 2026 InboundHub.
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-cupertino-text transition-colors">LinkedIn</a>
+                <a href="#comunidade" class="hover:text-cupertino-text transition-colors">Comunidade</a>
+            </div>
+        </div>
+    </footer>
 
+    <script>
+        function gerarPrompt() {
+            const nicho = document.getElementById('nicho').value;
+            const publico = document.getElementById('publico').value;
+            
+            if(!nicho || !publico) {
+                alert("Por favor, preencha o nicho e o público alvo.");
+                return;
+            }
+
+            const promptTexto = `Atue como Estrategista Sênior de Inbound.\n\nCrie um briefing estruturado para o nicho "${nicho}" focado no público "${publico}".\n\nO tom deve ser de autoridade e empatia, focado em resolução de dores reais. Desenvolva: 1. Dores principais, 2. Tópicos de conteúdo, 3. Gancho de atração.`;
+            
+            document.getElementById('promptOutput').value = promptTexto;
+            document.getElementById('resultadoArea').classList.remove('hidden');
+            
+            // Scroll suave até o resultado
+            document.getElementById('resultadoArea').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
