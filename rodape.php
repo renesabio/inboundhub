@@ -1,14 +1,34 @@
-<footer class="bg-slate-900 text-slate-400 py-12 mt-auto border-t border-slate-800">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <div class="mb-6">
-      <span class="text-2xl font-bold text-white tracking-tight">Inbound<span class="text-indigo-500">Hub</span></span>
-    </div>
-    <p class="mb-4 text-sm leading-relaxed max-w-md mx-auto">
-      Uma comunidade focada na engenharia de vendas, unindo a criatividade do Inbound com a precisão dos dados de RevOps.
-    </p>
-    <div class="text-xs text-slate-500 mt-8 pt-8 border-t border-slate-800">
-      <p>&copy; 2026 InboundHub. Todos os direitos reservados.</p>
-      <p class="mt-2">Curadoria e Estratégia por <a href="[https://www.linkedin.com/in/renesabio](https://www.linkedin.com/in/renesabio)" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-white transition">Renê Sábio</a>.</p>
-    </div>
-  </div>
-</footer>
+<footer class="py-12 px-6 border-t border-gray-200 mt-auto bg-cupertino-base">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-cupertino-subtext">
+            <div class="mb-4 md:mb-0 font-medium">
+                &copy; <?php echo date("Y"); ?> InboundHub.
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-cupertino-text transition-colors">LinkedIn</a>
+                <a href="#comunidade" class="hover:text-cupertino-text transition-colors">Grupo VIP</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function gerarPrompt() {
+            const nicho = document.getElementById('nicho').value;
+            const publico = document.getElementById('publico').value;
+            
+            if(!nicho || !publico) {
+                alert("Por favor, preencha os campos para gerar o briefing.");
+                return;
+            }
+
+            const promptTexto = `Atue como Estrategista Sênior de Inbound.\n\nCrie um briefing estruturado para o nicho "${nicho}" focado no público "${publico}".\n\nEstrutura:\n1. Dores Latentes\n2. Tópicos de Conteúdo (Topo, Meio, Fundo)\n3. Gancho de Atração\n\nTom de voz: Autoritativo e Empático.`;
+            
+            const output = document.getElementById('promptOutput');
+            const area = document.getElementById('resultadoArea');
+            
+            output.value = promptTexto;
+            area.classList.remove('hidden');
+            area.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    </script>
+</body>
+</html>
