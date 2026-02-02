@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InboundHub | Jornada de Marketing e Dados</title>
+    <title>InboundHub | Comunidade de Marketing</title>
     
     <link rel="icon" type="image/png" href="favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     
-    <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6Ld8-zQsAAAAAMSXVth5fUCZANUtKBb4hPOYNQR4&hl=pt" async defer></script>
+    <style>
+        /* Estilos mínimos exigidos pelo Brevo para funcionar */
+        @font-face { font-display: block; font-family: Roboto; src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff") }
+        @font-face { font-display: fallback; font-family: Roboto; font-weight: 600; src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff") }
+        @font-face { font-display: fallback; font-family: Roboto; font-weight: 700; src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff") }
+        #sib-container input:-ms-input-placeholder { text-align: left; font-family: Helvetica, sans-serif; color: #c0ccda; }
+        #sib-container input::placeholder { text-align: left; font-family: Helvetica, sans-serif; color: #c0ccda; }
+    </style>
+    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 </head>
 <body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
 
@@ -21,9 +28,9 @@
                     Inbound<span class="text-indigo-600">Hub</span>
                 </a>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#sobre" class="text-slate-600 hover:text-indigo-600 font-medium text-sm">Sobre</a>
+                    <a href="#proposito" class="text-slate-600 hover:text-indigo-600 font-medium text-sm">Propósito</a>
                     <a href="#ferramentas" class="text-slate-600 hover:text-indigo-600 font-medium text-sm">Ferramentas</a>
-                    <a href="#comunidade" class="px-5 py-2 bg-slate-800 text-white rounded-full font-bold text-sm hover:bg-slate-700 transition">Comunidade</a>
+                    <a href="#comunidade" class="px-5 py-2 bg-slate-800 text-white rounded-full font-bold text-sm hover:bg-slate-700 transition">Juntar-se</a>
                 </div>
             </div>
         </div>
@@ -31,69 +38,61 @@
 
     <header class="hero-bg text-white pt-24 pb-32">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-8">
-                Documentando a jornada no <br>
-                <span class="text-indigo-300">Marketing Orientado a Dados.</span>
+            <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-6">
+                <span class="text-indigo-300">Inbound Marketing</span> <br>
+                e Estratégias Reais.
             </h1>
             <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-                Menos promessas, mais mão na massa. 
-                Um espaço para testar frameworks, compartilhar aprendizados e construir estratégias de Inbound que funcionam na vida real.
+                Um ponto de encontro para crescermos juntos.
+                Troca de experiências, testes de ferramentas e networking para quem atua no mercado.
             </p>
             <div class="flex justify-center gap-4">
                 <a href="#comunidade" class="bg-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:bg-indigo-600 transition shadow-lg">
-                    Acompanhar Jornada
+                    Participar da Comunidade
                 </a>
             </div>
         </div>
     </header>
 
-    <section id="sobre" class="py-20 bg-white">
-        <div class="max-w-3xl mx-auto px-4">
-            <div class="text-center mb-10">
-                <span class="text-indigo-600 font-bold tracking-widest uppercase text-xs">Bastidores</span>
-                <h2 class="text-3xl font-bold text-slate-900 mt-2">Aprendendo e Construindo</h2>
-            </div>
-            <div class="prose prose-lg text-slate-600 mx-auto text-justify">
-                <p>
-                    O mercado de marketing está cheio de regras absolutas. Mas quem está no dia a dia sabe que a realidade é diferente.
-                </p>
-                <p>
-                    <strong>O InboundHub não é sobre ser um guru.</strong> É sobre documentar o processo de quem está com a mão na massa há 2 anos. Aqui, compartilho o que estou estudando sobre CRM, automação e Inbound, sem filtros e sem promessas mágicas.
-                </p>
-                <blockquote class="not-italic font-medium text-slate-800 border-l-4 border-indigo-500 pl-4 py-2 bg-slate-50 mt-8 rounded-r-lg">
-                    "O objetivo não é ter todas as respostas, mas fazer as perguntas certas e testar as soluções junto com a comunidade."
-                </blockquote>
-            </div>
+    <section id="proposito" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <span class="text-indigo-600 font-bold tracking-widest uppercase text-xs">Nosso Foco</span>
+            <h2 class="text-3xl font-bold text-slate-900 mt-2 mb-8">Por que o InboundHub?</h2>
+            
+            <p class="text-lg text-slate-600 leading-relaxed text-justify md:text-center">
+                O mercado de marketing é dinâmico e, muitas vezes, solitário.
+                Criamos este espaço não para ditar regras, mas para conectar profissionais.
+                Independentemente do nível de experiência, o objetivo aqui é simples: <strong>evoluir junto</strong>.
+                Compartilhar o que funciona, debater o que não funciona e fortalecer nosso networking.
+            </p>
         </div>
     </section>
 
     <section id="ferramentas" class="py-20 bg-slate-100 border-y border-slate-200">
         <div class="max-w-5xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900">Laboratório</h2>
-                <p class="text-slate-500 mt-2">Ferramentas que estou desenvolvendo para facilitar o dia a dia.</p>
+                <h2 class="text-3xl font-bold text-slate-900">Ferramentas Úteis</h2>
+                <p class="text-slate-500 mt-2">Recursos para facilitar a rotina.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <a href="gerador-briefing.html" class="bg-white p-8 rounded-xl shadow-sm tool-card block">
                     <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-6 text-2xl">⚡</div>
                     <h3 class="text-xl font-bold text-slate-900 mb-2">Gerador de Briefing</h3>
-                    <p class="text-sm text-slate-500 mb-4">Um assistente simples para estruturar pedidos de campanha.</p>
-                    <span class="text-indigo-600 font-bold text-sm underline decoration-dotted">Testar Ferramenta →</span>
+                    <p class="text-sm text-slate-500 mb-4">Assistente para estruturar pedidos de campanha.</p>
+                    <span class="text-indigo-600 font-bold text-sm underline decoration-dotted">Acessar →</span>
                 </a>
 
                 <div class="bg-white p-8 rounded-xl shadow-sm tool-card opacity-60 grayscale cursor-not-allowed">
                     <div class="w-12 h-12 bg-slate-100 text-slate-400 rounded-lg flex items-center justify-center mb-6 text-2xl">📋</div>
                     <h3 class="text-xl font-bold text-slate-900 mb-2">Checklist CRM</h3>
-                    <p class="text-sm text-slate-500 mb-4">Lista de verificação para manter os dados organizados.</p>
-                    <span class="text-slate-400 text-xs font-bold border border-slate-200 px-2 py-1 rounded">EM DESENVOLVIMENTO</span>
+                    <span class="text-slate-400 text-xs font-bold border border-slate-200 px-2 py-1 rounded">EM BREVE</span>
                 </div>
 
                 <div class="bg-white p-8 rounded-xl shadow-sm tool-card opacity-60 grayscale cursor-not-allowed">
                     <div class="w-12 h-12 bg-slate-100 text-slate-400 rounded-lg flex items-center justify-center mb-6 text-2xl">🧮</div>
                     <h3 class="text-xl font-bold text-slate-900 mb-2">Calculadora ROI</h3>
-                    <p class="text-sm text-slate-500 mb-4">Planilha interativa para simular cenários.</p>
-                    <span class="text-slate-400 text-xs font-bold border border-slate-200 px-2 py-1 rounded">EM DESENVOLVIMENTO</span>
+                    <span class="text-slate-400 text-xs font-bold border border-slate-200 px-2 py-1 rounded">EM BREVE</span>
                 </div>
             </div>
         </div>
@@ -103,104 +102,123 @@
         <div class="max-w-6xl mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center gap-16">
             
             <div class="md:w-1/2 text-left">
-                <span class="bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Networking</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-white mt-6 mb-6">Vamos trocar figurinhas?</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Participe do Hub</h2>
                 <p class="text-slate-300 text-lg mb-8 leading-relaxed">
-                    A ideia é criar um grupo pequeno de profissionais para discutir o que funciona e o que não funciona, sem julgamentos.
-                    <br><br>
-                    Deixe seu e-mail para receber o link do grupo e novidades sobre as ferramentas.
+                    Cadastre-se para receber novidades sobre as ferramentas e acesso aos grupos de discussão.
                 </p>
+                <div class="space-y-3 text-slate-400 text-sm">
+                    <p>✓ Sem spam</p>
+                    <p>✓ Conteúdo direto ao ponto</p>
+                    <p>✓ Focado em crescimento mútuo</p>
+                </div>
             </div>
 
-            <div class="md:w-1/2 w-full max-w-md">
-                <div class="sib-form">
-                    <div id="sib-form-container" class="sib-form-container">
-                        
-                        <div id="error-message" class="sib-form-message-panel">
-                            <div class="sib-form-message-panel__text">
-                                <span class="sib-form-message-panel__inner-text">Não foi possível enviar. Tente novamente.</span>
+            <div class="md:w-1/2 w-full">
+                <div class="brevo-container-custom">
+                    
+                    <div class="sib-form" style="text-align: center;">
+                        <div id="sib-form-container" class="sib-form-container">
+                            <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
+                                <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                    <span class="sib-form-message-panel__inner-text">Não foi possível enviar. Tente novamente.</span>
+                                </div>
+                            </div>
+                            <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
+                                <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                    <span class="sib-form-message-panel__inner-text">Cadastro realizado com sucesso.</span>
+                                </div>
+                            </div>
+                            
+                            <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:0px; border-color:#C0CCD9; border-style:solid; direction:ltr">
+                                <form id="sib-form" method="POST" action="https://84eb807c.sibforms.com/serve/MUIFANVwsz4F8USqjUIl5hcoZa-q9OjDzV8DJeZXur5ZyZXSRCCRLT9nxbsClV7KKNofEI7tHlWyRQCNV1IKVhYlyF5FH-Sktf8kZRybqD8yAL0Dc27iBqqwYHa3uiSLu4ykV9jClDVqF9osmxJej5eU4hw67DDg0myA1qOLgdHkamNX3xjeH0iIbE7-wEJ6XUoiDo2kOg6tDUfP" data-type="subscription">
+                                    <div style="padding: 8px 0;">
+                                        <div class="sib-input sib-form-block">
+                                            <div class="form__entry entry_block">
+                                                <div class="form__label-row ">
+                                                    <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;" for="NOME" data-required="*">Nome</label>
+                                                    <div class="entry__field">
+                                                        <input class="input " maxlength="200" type="text" id="NOME" name="NOME" autocomplete="off" placeholder="Seu nome" data-required="true" required />
+                                                    </div>
+                                                </div>
+                                                <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 8px 0;">
+                                        <div class="sib-input sib-form-block">
+                                            <div class="form__entry entry_block">
+                                                <div class="form__label-row ">
+                                                    <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">E-mail</label>
+                                                    <div class="entry__field">
+                                                        <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="seu@email.com" data-required="true" required />
+                                                    </div>
+                                                </div>
+                                                <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div style="padding: 8px 0; display:none;">
+                                        <div class="sib-optin sib-form-block" data-required="true">
+                                            <div class="form__entry entry_mcq">
+                                                <div class="form__label-row ">
+                                                    <div class="entry__choice">
+                                                        <label>
+                                                            <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" checked required />
+                                                            <span class="checkbox checkbox_tick_positive"></span><span style="font-size:14px; text-align:left; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent;"><p>Aceito</p></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="padding: 8px 0;">
+                                        <div class="sib-form-block" style="text-align: left">
+                                            <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#FFFFFF; background-color:#2152a2; border-radius:3px; border-width:0px;" form="sib-form" type="submit">
+                                                Entrar na Lista
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <input type="text" name="email_address_check" value="" class="input--hidden">
+                                    <input type="hidden" name="locale" value="pt">
+                                </form>
                             </div>
                         </div>
-                        <div id="success-message" class="sib-form-message-panel">
-                            <div class="sib-form-message-panel__text">
-                                <span class="sib-form-message-panel__inner-text">Cadastro realizado! Verifique seu e-mail.</span>
-                            </div>
-                        </div>
-
-                        <form id="sib-form" method="POST" action="https://84eb807c.sibforms.com/serve/MUIFANVwsz4F8USqjUIl5hcoZa-q9OjDzV8DJeZXur5ZyZXSRCCRLT9nxbsClV7KKNofEI7tHlWyRQCNV1IKVhYlyF5FH-Sktf8kZRybqD8yAL0Dc27iBqqwYHa3uiSLu4ykV9jClDVqF9osmxJej5eU4hw67DDg0myA1qOLgdHkamNX3xjeH0iIbE7-wEJ6XUoiDo2kOg6tDUfP" data-type="subscription">
-                            
-                            <h3 class="text-slate-900 font-bold text-xl mb-4">Junte-se a nós</h3>
-                            
-                            <div class="sib-input sib-form-block">
-                                <div class="form__entry entry_block">
-                                    <div class="form__label-row">
-                                        <label class="entry__label font-bold text-sm text-slate-700" for="NOME" data-required="*">Nome</label>
-                                        <div class="entry__field">
-                                            <input class="input" type="text" id="NOME" name="NOME" autocomplete="off" placeholder="Seu nome" data-required="true" required />
-                                        </div>
-                                    </div>
-                                    <label class="entry__error entry__error--primary" style="color:red; font-size:12px;"></label>
-                                </div>
-                            </div>
-
-                            <div class="sib-input sib-form-block">
-                                <div class="form__entry entry_block">
-                                    <div class="form__label-row">
-                                        <label class="entry__label font-bold text-sm text-slate-700" for="EMAIL" data-required="*">E-mail</label>
-                                        <div class="entry__field">
-                                            <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="seu@email.com" data-required="true" required />
-                                        </div>
-                                    </div>
-                                    <label class="entry__error entry__error--primary" style="color:red; font-size:12px;"></label>
-                                </div>
-                            </div>
-
-                            <div class="sib-optin sib-form-block" style="display:none;">
-                                <div class="form__entry entry_mcq">
-                                    <div class="form__label-row">
-                                        <div class="entry__choice">
-                                            <label>
-                                                <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" checked required />
-                                                <span class="checkbox checkbox_tick_positive"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="sib-form-block" style="text-align: left">
-                                <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
-                                    QUERO PARTICIPAR
-                                </button>
-                            </div>
-
-                            <input type="text" name="email_address_check" value="" class="input--hidden" style="display:none;">
-                            <input type="hidden" name="locale" value="pt">
-                        </form>
                     </div>
-                </div>
+                    </div>
             </div>
         </div>
     </section>
 
     <footer class="bg-black text-slate-500 py-12 border-t border-slate-800 mt-auto">
-        <div class="max-w-6xl mx-auto px-4 text-center md:text-left">
-            <span class="text-xl font-bold text-slate-200 tracking-tight">Inbound<span class="text-indigo-600">Hub</span></span>
-            <div class="text-sm mt-4">
-                <p class="mb-1">© 2026 InboundHub.</p>
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6">
+            <div>
+                <span class="text-xl font-bold text-slate-200 tracking-tight">Inbound<span class="text-indigo-600">Hub</span></span>
+                <p class="text-sm mt-2 max-w-xs">Conectando profissionais e compartilhando aprendizados.</p>
+            </div>
+            
+            <div class="text-sm">
+                <p class="mb-1">© 2026 InboundHub. Todos os direitos reservados.</p>
                 <p>Curadoria de <a href="https://www.linkedin.com/in/renesabio" target="_blank" class="text-indigo-400 hover:text-white transition underline decoration-dotted">Renê Sábio</a>.</p>
             </div>
         </div>
     </footer>
 
     <script>
-      window.REQUIRED_CODE_ERROR_MESSAGE = 'Escolha um código de país';
-      window.LOCALE = 'pt';
-      window.EMAIL_INVALID_MESSAGE = "E-mail inválido.";
-      window.REQUIRED_ERROR_MESSAGE = "Campo obrigatório.";
-      window.GENERIC_INVALID_MESSAGE = "Verifique os dados.";
-      window.translation = { common: { selectedList: '{quantity} lista', selectedLists: '{quantity} listas' } };
+        window.REQUIRED_CODE_ERROR_MESSAGE = 'Escolha um código de país';
+        window.LOCALE = 'pt';
+        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "A informação fornecida não é valida.";
+        window.REQUIRED_ERROR_MESSAGE = "Campo obrigatório.";
+        window.GENERIC_INVALID_MESSAGE = "Erro no envio.";
+        window.translation = {
+            common: { selectedList: '{quantity} lista selecionada', selectedLists: '{quantity} listas selecionadas', selectedOption: '{quantity} selecionado', selectedOptions: '{quantity} selecionados' }
+        };
+        var AUTOHIDE = Boolean(0);
     </script>
+    <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Ld8-zQsAAAAAMSXVth5fUCZANUtKBb4hPOYNQR4&hl=pt" async defer></script>
 
+    <script src="script.js"></script>
 </body>
 </html>
