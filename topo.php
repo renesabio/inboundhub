@@ -11,15 +11,15 @@
     <div class="max-w-6xl mx-auto px-6">
         <div class="flex justify-between h-20 items-center">
             <div class="flex items-center">
-                <a href="index.php" class="text-2xl font-bold text-slate-900 tracking-tight hover:text-indigo-600 transition">
-                    Inbound<span class="text-indigo-600">Hub</span>
+                <a href="index.php" class="text-2xl font-bold text-slate-900 tracking-tight hover:text-violet-700 transition">
+                    Inbound<span class="text-violet-700">Hub</span>
                 </a>
             </div>
             <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
-                <a href="index.php" class="hover:text-indigo-600 transition">Home</a>
-                <a href="index.php#artigos" class="hover:text-indigo-600 transition">Artigos</a>
-                <a href="index.php#ferramentas" class="hover:text-indigo-600 transition">Ferramentas</a>
-                <a href="index.php#comunidade" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">Comunidade</a>
+                <a href="index.php" class="hover:text-violet-700 transition">Home</a>
+                <a href="index.php#artigos" class="hover:text-violet-700 transition">Artigos</a>
+                <a href="index.php#ferramentas" class="hover:text-violet-700 transition">Ferramentas</a>
+                <a href="index.php#comunidade" class="px-4 py-2 bg-violet-700 text-white rounded hover:bg-violet-800 transition shadow-md shadow-violet-200">Comunidade</a>
             </div>
         </div>
     </div>
