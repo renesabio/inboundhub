@@ -1,0 +1,28 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,700;1,400&display=swap');
+
+/* Configurações Globais */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+/* O "Charme" do Site: Degradê Azul Escuro */
+.hero-bg {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+/* Animação dos Cards */
+.card-hover:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Ajustes de Texto (Correção de formatação) */
+.prose p {
+    margin-bottom: 1.5rem;
+    line-height: 1.75;
+}
