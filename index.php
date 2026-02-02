@@ -12,8 +12,8 @@
     
     <style>
         body { font-family: 'Inter', sans-serif; }
-        /* Degradê mais tecnológico */
-        .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #312e81 100%); }
+        /* THE WISE THEME: Indigo Profundo + Violeta */
+        .hero-bg { background: linear-gradient(135deg, #1e1b4b 0%, #4c1d95 100%); }
         .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
     </style>
 </head>
@@ -21,19 +21,22 @@
 
     <?php include 'topo.php'; ?>
 
-    <div class="hero-bg text-white pt-24 pb-32">
-        <div class="max-w-4xl mx-auto px-6 text-center">
+    <div class="hero-bg text-white pt-24 pb-32 relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-violet-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-white/10 border border-white/10 text-amber-200 text-xs font-bold tracking-[0.2em] uppercase mb-6">Estratégia & Dados</span>
             <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-8 tracking-tight">
-                Marketing vai muito além <br>de <span class="text-indigo-400 italic">divulgar uma marca.</span>
+                Marketing vai muito além <br>de <span class="text-amber-400 italic font-serif">divulgar uma marca.</span>
             </h1>
             <p class="text-lg md:text-xl text-slate-300 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
                 É sobre criar conexões reais, estruturar dados e construir uma presença que faz sentido. Somos o InboundHub: unimos a estratégia de Inbound à precisão do RevOps.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#comunidade" class="bg-indigo-500 text-white px-8 py-4 rounded-lg font-bold hover:bg-indigo-600 transition shadow-lg w-full sm:w-auto">
+                <a href="#comunidade" class="bg-violet-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-violet-500 transition shadow-lg shadow-violet-900/50 w-full sm:w-auto">
                     Entrar na Comunidade
                 </a>
-                <a href="#ferramentas" class="bg-white/10 border border-white/20 text-white px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition w-full sm:w-auto backdrop-blur-sm">
+                <a href="#ferramentas" class="bg-transparent border border-slate-600 text-slate-200 px-8 py-4 rounded-lg font-bold hover:border-amber-400 hover:text-white transition w-full sm:w-auto">
                     Acessar Ferramentas
                 </a>
             </div>
@@ -43,7 +46,7 @@
     <section class="py-20 bg-white">
         <div class="max-w-3xl mx-auto px-6">
             <div class="text-center mb-12">
-                <span class="text-indigo-600 font-bold tracking-widest uppercase text-xs">Nosso Propósito</span>
+                <span class="text-violet-700 font-bold tracking-widest uppercase text-xs">Nosso Propósito</span>
                 <h2 class="text-3xl font-bold text-slate-900 mt-3">Clareza em meio ao ruído</h2>
             </div>
             <div class="prose prose-lg text-slate-600 mx-auto leading-relaxed">
@@ -53,7 +56,7 @@
                 <p class="mb-6">
                     Nossa jornada no marketing nos ensinou que "hacks" têm seu valor tático, mas são os fundamentos, o estudo e a análise de dados que constroem impérios duradouros.
                 </p>
-                <p class="border-l-4 border-indigo-500 pl-6 py-4 bg-slate-50 rounded-r-lg font-medium text-slate-800">
+                <p class="border-l-4 border-amber-400 pl-6 py-4 bg-slate-50 rounded-r-lg font-medium text-slate-800 italic">
                     "Aqui no InboundHub, não idolatramos a complexidade. Usamos a tecnologia para simplificar processos e humanizar relações."
                 </p>
             </div>
@@ -64,12 +67,12 @@
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center tracking-tight">Estudos & Reflexões</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden card-hover flex flex-col h-full">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden card-hover flex flex-col h-full group">
                     <div class="p-8 flex flex-col h-full">
-                        <span class="text-xs font-bold text-indigo-600 uppercase mb-3">Estratégia</span>
-                        <h3 class="text-xl font-bold mb-3 text-slate-900 leading-snug">Inbound Marketing: A Arte da Atração</h3>
+                        <span class="text-xs font-bold text-violet-600 uppercase mb-3">Estratégia</span>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 leading-snug group-hover:text-violet-700 transition">Inbound Marketing: A Arte da Atração</h3>
                         <p class="text-slate-600 text-sm mb-6 flex-grow">Como construir um ecossistema que educa e converte, respeitando o tempo do cliente.</p>
-                        <a href="artigo-inbound.php" class="text-indigo-600 font-bold hover:text-indigo-800 text-sm flex items-center gap-2">
+                        <a href="artigo-inbound.php" class="text-violet-700 font-bold hover:text-violet-900 text-sm flex items-center gap-2 uppercase tracking-wide">
                             Ler Artigo <span aria-hidden="true">&rarr;</span>
                         </a>
                     </div>
@@ -90,7 +93,7 @@
         </div>
     </section>
 
-    <section id="ferramentas" class="py-20 bg-slate-900">
+    <section id="ferramentas" class="py-20 bg-indigo-950">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-white mb-4">Caixa de Ferramentas</h2>
@@ -98,84 +101,71 @@
             </div>
             
             <div class="grid md:grid-cols-3 gap-6">
-                
-                <a href="#" class="bg-slate-800 rounded-xl p-8 border border-slate-700 hover:border-indigo-500 transition group relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
-                        <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
-                    </div>
+                <a href="#" class="bg-white/5 rounded-xl p-8 border border-white/10 hover:border-amber-400 transition group relative overflow-hidden backdrop-blur-sm">
                     <div class="relative z-10">
-                        <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl">✨</div>
+                        <div class="w-12 h-12 bg-violet-700 rounded-lg flex items-center justify-center mb-6 text-white text-2xl shadow-lg shadow-violet-900/50">✨</div>
                         <h3 class="text-xl font-bold text-white mb-2">Gerador de Briefing</h3>
                         <p class="text-slate-400 text-sm mb-6">Crie a estrutura perfeita para suas campanhas usando nossa IA.</p>
-                        <span class="text-indigo-400 text-sm font-bold group-hover:text-white transition">Acessar Ferramenta &rarr;</span>
+                        <span class="text-amber-400 text-xs font-bold uppercase tracking-wider group-hover:text-amber-300 transition">Acessar Ferramenta &rarr;</span>
                     </div>
                 </a>
-
-                <a href="#" class="bg-slate-800 rounded-xl p-8 border border-slate-700 hover:border-green-500 transition group relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
-                        <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    </div>
+                <a href="#" class="bg-white/5 rounded-xl p-8 border border-white/10 hover:border-amber-400 transition group relative overflow-hidden backdrop-blur-sm">
                     <div class="relative z-10">
-                        <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl">✅</div>
+                        <div class="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl shadow-lg shadow-emerald-900/50">✅</div>
                         <h3 class="text-xl font-bold text-white mb-2">Checklist de Inbound</h3>
                         <p class="text-slate-400 text-sm mb-6">Não esqueça nenhuma etapa. Do setup do CRM ao disparo de e-mail.</p>
-                        <span class="text-green-400 text-sm font-bold group-hover:text-white transition">Acessar Ferramenta &rarr;</span>
+                        <span class="text-amber-400 text-xs font-bold uppercase tracking-wider group-hover:text-amber-300 transition">Acessar Ferramenta &rarr;</span>
                     </div>
                 </a>
-
-                <a href="#" class="bg-slate-800 rounded-xl p-8 border border-slate-700 hover:border-blue-500 transition group relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
-                        <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
-                    </div>
+                <a href="#" class="bg-white/5 rounded-xl p-8 border border-white/10 hover:border-amber-400 transition group relative overflow-hidden backdrop-blur-sm">
                     <div class="relative z-10">
-                        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl">🧮</div>
+                        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl shadow-lg shadow-blue-900/50">🧮</div>
                         <h3 class="text-xl font-bold text-white mb-2">Calculadora de ROI</h3>
                         <p class="text-slate-400 text-sm mb-6">Prove o valor do seu trabalho com projeções financeiras claras.</p>
-                        <span class="text-blue-400 text-sm font-bold group-hover:text-white transition">Acessar Ferramenta &rarr;</span>
+                        <span class="text-amber-400 text-xs font-bold uppercase tracking-wider group-hover:text-amber-300 transition">Acessar Ferramenta &rarr;</span>
                     </div>
                 </a>
-
             </div>
         </div>
     </section>
 
-    <section id="comunidade" class="py-20 bg-green-50/50 border-t border-green-100">
+    <section id="comunidade" class="py-20 bg-violet-50 border-t border-violet-100">
         <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2 text-left">
-                <span class="text-green-600 font-bold uppercase tracking-wider text-xs mb-2 block">Networking Real</span>
+                <span class="text-violet-700 font-bold uppercase tracking-wider text-xs mb-2 block">Networking de Alto Nível</span>
                 <h2 class="text-3xl font-bold text-slate-900 mb-4">A Comunidade InboundHub</h2>
                 <p class="text-slate-600 mb-6 leading-relaxed">
                     Troque ideias, tire dúvidas técnicas e acesse vagas exclusivas. Para manter o nível da discussão, o acesso é restrito a convidados.
                 </p>
                 <ul class="space-y-3 mb-8">
                     <li class="flex items-center text-sm text-slate-700">
-                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Sem spam ou "bom dia" excessivo.
+                        <svg class="w-5 h-5 text-violet-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Sem spam. Foco em técnica.
                     </li>
                     <li class="flex items-center text-sm text-slate-700">
-                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Foco em técnica e mercado.
+                        <svg class="w-5 h-5 text-violet-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Vagas de RevOps e Marketing.
                     </li>
                 </ul>
             </div>
             
             <div class="md:w-1/2 w-full">
-                <div class="bg-white p-8 rounded-2xl shadow-xl border border-green-100">
+                <div class="bg-white p-8 rounded-2xl shadow-xl border border-violet-100">
                     <div class="text-center mb-6">
                         <h3 class="font-bold text-slate-900">Solicitar Convite</h3>
-                        <p class="text-xs text-slate-500 mt-1">Você será redirecionado para o WhatsApp após o cadastro.</p>
+                        <p class="text-xs text-slate-500 mt-1">Redirecionamento automático para WhatsApp após cadastro.</p>
                     </div>
                     
-                    <div class="bg-slate-100 border-2 border-dashed border-slate-300 rounded-lg p-6 text-center">
+                    <div class="bg-slate-50 border-2 border-dashed border-slate-200 rounded-lg p-8 text-center">
                         <p class="text-sm text-slate-500 font-medium mb-2">Cole seu formulário do Brevo aqui</p>
-                        <p class="text-xs text-slate-400">(Substitua essa div pelo código do iframe)</p>
+                        <p class="text-xs text-slate-400">(Configurar redirect no Brevo para o link do WhatsApp)</p>
                     </div>
-                    </div>
+
+                </div>
             </div>
         </div>
     </section>
 
     <?php include 'rodape.php'; ?>
-
 </body>
 </html>
