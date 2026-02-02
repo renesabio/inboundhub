@@ -1,28 +1,52 @@
-/* Fontes */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,700;1,400&display=swap');
+/* Fontes - Apenas Inter (Sans-Serif Moderno) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
 
 /* Configurações Globais */
-body {
-    font-family: 'Inter', sans-serif;
+body, h1, h2, h3, h4, p, a, input, button {
+    font-family: 'Inter', sans-serif !important; /* Força bruta para garantir sem serifa */
 }
 
-h1, h2, h3 {
-    font-family: 'Merriweather', serif;
-}
-
-/* O "Charme" do Site: Degradê Azul Escuro */
+/* Fundo Hero */
 .hero-bg {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
 }
 
-/* Animação dos Cards */
-.card-hover:hover {
-    transform: translateY(-5px);
-    transition: all 0.3s ease;
+/* CAIXAS CHAMATIVAS (Regra Nova) */
+.card-destaque {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
 }
 
-/* Ajustes de Texto (Correção de formatação) */
+.card-destaque:hover {
+    transform: translateY(-8px); /* Sobe mais */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Sombra forte */
+    border-color: #6366f1; /* Borda Indigo ao passar o mouse */
+}
+
+/* Detalhe visual no topo do card */
+.card-destaque::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #6366f1; /* Faixa colorida no topo */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card-destaque:hover::before {
+    opacity: 1;
+}
+
+/* Ajustes de Texto */
 .prose p {
     margin-bottom: 1.5rem;
-    line-height: 1.75;
+    line-height: 1.8;
+    font-size: 1.1rem;
 }
