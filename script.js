@@ -1,29 +1,35 @@
-function capturarLead(event) {
-    event.preventDefault(); // Impede a página de recarregar
-    
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
+// Função para mostrar o Gerador de Prompt e esconder os cards
+function abrirGerador() {
+    document.getElementById('grid-ferramentas').classList.add('hidden');
+    document.getElementById('area-gerador').classList.remove('hidden');
+}
 
-    if (!nome || !email) {
-        alert("Por favor, preencha todos os campos para receber o acesso.");
+// Função para voltar aos cards
+function fecharGerador() {
+    document.getElementById('area-gerador').classList.add('hidden');
+    document.getElementById('grid-ferramentas').classList.remove('hidden');
+}
+
+// Lógica do Gerador de Prompt
+function gerarPrompt() {
+    const nicho = document.getElementById('nicho').value;
+    const publico = document.getElementById('publico').value;
+
+    if (!nicho || !publico) {
+        alert("Preencha os campos de Nicho e Público para prosseguir.");
         return;
     }
 
-    // AQUI: No futuro, você integrará com o Brevo/N8N.
-    // Por enquanto, damos um feedback visual para o usuário.
-    
-    const btn = event.target.querySelector('button');
-    const textoOriginal = btn.innerText;
-    
-    btn.innerText = "Enviando...";
-    btn.disabled = true;
+    const promptTexto = `Atue como Estrategista Sênior de RevOps e Inbound.
+Desenvolva uma estrutura de campanha para o nicho "${nicho}" visando o público "${publico}".
 
-    // Simulação de envio (espera 1.5 segundos)
-    setTimeout(() => {
-        alert(`Obrigado, ${nome}! O link de acesso foi enviado para ${email}.`);
-        btn.innerText = "Enviado com Sucesso!";
-        btn.classList.add('bg-green-600', 'hover:bg-green-700');
-        btn.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
-        document.getElementById('form-comunidade').reset();
-    }, 1500);
+ENTREGÁVEIS:
+1. Mapeamento de objeções ocultas na decisão de compra.
+2. 3 Pautas de conteúdo fundo de funil focadas em conversão.
+3. Sugestão de Lead Magnet técnico (Planilha, Checklist ou Audit).
+
+Tom: Analítico, direto e focado em ROI.`;
+
+    document.getElementById('promptOutput').value = promptTexto;
+    document.getElementById('resultadoPrompt').classList.remove('hidden');
 }
