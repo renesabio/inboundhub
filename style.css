@@ -1,6 +1,5 @@
 /* Fontes */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,700;1,400&display=swap');
-/* Fonte Roboto (Exigência técnica do Brevo) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Configurações Globais */
@@ -12,15 +11,13 @@ h1, h2, h3 { font-family: 'Merriweather', serif; }
     background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
 }
 
-/* --- LOGO (Ajustado) --- */
-/* Estado normal */
+/* --- LOGO --- */
 .logo-brand {
-    color: #0f172a; /* Slate 900 */
+    color: #0f172a;
     transition: color 0.3s ease;
 }
-/* Estado Hover (Apenas muda de cor) */
 .logo-brand:hover {
-    color: #4f46e5; /* Indigo 600 */
+    color: #4f46e5;
 }
 
 /* --- CARDS --- */
@@ -34,75 +31,24 @@ h1, h2, h3 { font-family: 'Merriweather', serif; }
     box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.1);
 }
 
-/* --- FORMULÁRIO BREVO (Personalização Profunda) --- */
-/* Esconde o estilo padrão feio do Brevo, mas mantém a função */
-#sib-container {
-    background: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    max-width: 100% !important;
-}
-
-#sib-form {
+/* --- AJUSTES DO FORMULÁRIO BREVO --- */
+/* Isso garante que o form fique bonito sem quebrar o código deles */
+.brevo-container-custom {
     background: white;
     padding: 2rem;
     border-radius: 1rem;
-    /* Sombra suave */
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    text-align: left !important;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-/* Campos de Texto */
-.sib-input input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    margin-top: 4px;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.95rem;
-    color: #334155;
+/* Força os inputs do Brevo a terem a fonte do site */
+#sib-container input, #sib-container textarea {
+    font-family: 'Inter', sans-serif !important;
 }
 
-.sib-input input:focus {
-    outline: none;
-    border-color: #6366f1;
-    ring: 2px solid #e0e7ff;
-}
-
-/* Botão de Enviar */
-.sib-form-block__button {
-    background-color: #4f46e5 !important;
-    color: white !important;
-    width: 100%;
-    padding: 14px !important;
-    border-radius: 8px;
-    font-weight: 600 !important;
-    font-size: 1rem !important;
-    margin-top: 1rem;
-    cursor: pointer;
-    transition: background 0.2s;
+/* Esconde bordas duplas feias do Brevo se houver */
+#sib-container {
     border: none !important;
-}
-.sib-form-block__button:hover {
-    background-color: #4338ca !important;
-}
-
-/* Mensagens de Sucesso/Erro (Controladas pelo script do Brevo) */
-#success-message, #error-message {
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    font-size: 0.9rem;
-}
-#success-message {
-    background-color: #dcfce7 !important;
-    color: #166534 !important;
-    border: 1px solid #bbf7d0;
-}
-#error-message {
-    background-color: #fee2e2 !important;
-    color: #991b1b !important;
-    border: 1px solid #fecaca;
+    background: transparent !important;
 }
