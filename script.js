@@ -1,23 +1,29 @@
-function gerarPrompt() {
-    const nicho = document.getElementById('nicho').value;
-    const publico = document.getElementById('publico').value;
+function capturarLead(event) {
+    event.preventDefault(); // Impede a página de recarregar
+    
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
 
-    if (!nicho || !publico) {
-        alert("Por favor, preencha o nicho e o público alvo para gerarmos sua estratégia.");
+    if (!nome || !email) {
+        alert("Por favor, preencha todos os campos para receber o acesso.");
         return;
     }
 
-    // Lógica do Prompt - Estrutura Profissional
-    const promptTexto = `Atue como Estrategista Sênior de Inbound Marketing.
-Crie um briefing estruturado para o nicho "${nicho}" focado no público-alvo "${publico}".
-
-Requisitos da resposta:
-1. Mapeamento de dores reais e ocultas desse público.
-2. Sugestão de 3 pautas de conteúdo de fundo de funil (decisão).
-3. Tom de voz: Autoridade técnica, porém empático e focado em resolução.
+    // AQUI: No futuro, você integrará com o Brevo/N8N.
+    // Por enquanto, damos um feedback visual para o usuário.
     
-Evite clichês de marketing. Foque em dados e comportamento.`;
+    const btn = event.target.querySelector('button');
+    const textoOriginal = btn.innerText;
+    
+    btn.innerText = "Enviando...";
+    btn.disabled = true;
 
-    document.getElementById('promptOutput').value = promptTexto;
-    document.getElementById('resultadoArea').classList.remove('hidden');
+    // Simulação de envio (espera 1.5 segundos)
+    setTimeout(() => {
+        alert(`Obrigado, ${nome}! O link de acesso foi enviado para ${email}.`);
+        btn.innerText = "Enviado com Sucesso!";
+        btn.classList.add('bg-green-600', 'hover:bg-green-700');
+        btn.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
+        document.getElementById('form-comunidade').reset();
+    }, 1500);
 }
