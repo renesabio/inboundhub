@@ -1,52 +1,71 @@
-/* Fontes - Apenas Inter (Sans-Serif Moderno) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,700;1,400&display=swap');
+/* Fonte Roboto exigida pelo Brevo */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Configurações Globais */
-body, h1, h2, h3, h4, p, a, input, button {
-    font-family: 'Inter', sans-serif !important; /* Força bruta para garantir sem serifa */
-}
+body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+h1, h2, h3 { font-family: 'Merriweather', serif; }
 
-/* Fundo Hero */
+/* --- HERO & IDENTIDADE --- */
 .hero-bg {
-    background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
 }
 
-/* CAIXAS CHAMATIVAS (Regra Nova) */
-.card-destaque {
-    background: #ffffff;
+/* Logo Animado (Aurora Boreal) */
+.logo-animado {
+    background: linear-gradient(90deg, #ffffff, #818cf8, #ffffff);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shine 3s linear infinite;
+}
+@keyframes shine {
+    to { background-position: 200% center; }
+}
+
+/* --- CARDS DE FERRAMENTAS --- */
+.tool-card {
+    transition: all 0.3s ease;
     border: 1px solid #e2e8f0;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    overflow: hidden;
+}
+.tool-card:hover {
+    transform: translateY(-5px);
+    border-color: #6366f1;
+    box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.1);
 }
 
-.card-destaque:hover {
-    transform: translateY(-8px); /* Sobe mais */
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Sombra forte */
-    border-color: #6366f1; /* Borda Indigo ao passar o mouse */
+/* --- ESTILOS DO FORMULÁRIO BREVO (Limpos e Integrados) --- */
+#sib-container {
+    background: transparent !important;
+    border: none !important;
+    max-width: 100% !important;
+    padding: 0 !important;
 }
-
-/* Detalhe visual no topo do card */
-.card-destaque::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+#sib-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.sib-input input {
     width: 100%;
-    height: 4px;
-    background: #6366f1; /* Faixa colorida no topo */
-    opacity: 0;
-    transition: opacity 0.3s;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-family: 'Inter', sans-serif;
 }
-
-.card-destaque:hover::before {
-    opacity: 1;
+.sib-form-block__button {
+    background-color: #4f46e5 !important; /* Indigo 600 */
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
 }
-
-/* Ajustes de Texto */
-.prose p {
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-    font-size: 1.1rem;
+.sib-form-block__button:hover {
+    background-color: #4338ca !important; /* Indigo 700 */
 }
