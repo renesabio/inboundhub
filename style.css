@@ -24,42 +24,43 @@ a { text-decoration: none !important; transition: all 0.2s ease; }
     border-radius: 12px;
     padding: 2rem;
     transition: all 0.3s ease;
-    height: 100%;
+    height: 100%; /* Garante altura igual */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* Hover Genérico */
 .article-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); }
 
-/* Cores Específicas por Pilar (Borda e Texto) */
+/* CORES DOS PILARES (Forçadas) */
 /* Inbound (Azul) */
+.card-blue .tag-pill { background: #eff6ff; color: #2563eb; }
+.card-blue .accent-text { color: #2563eb; }
 .card-blue:hover { border-color: #3b82f6; }
-.text-blue-custom { color: #2563eb; }
 
 /* Dados (Roxo) */
+.card-purple .tag-pill { background: #f5f3ff; color: #9333ea; }
+.card-purple .accent-text { color: #7e22ce; }
 .card-purple:hover { border-color: #9333ea; }
-.text-purple-custom { color: #7e22ce; }
 
-/* RevOps (Verde) */
-.card-green:hover { border-color: #10b981; }
-.text-green-custom { color: #059669; }
+/* RevOps (Verde - Corrigido) */
+.card-green .tag-pill { background: #ecfdf5 !important; color: #10b981 !important; }
+.card-green .accent-text { color: #059669 !important; }
+.card-green:hover { border-color: #10b981 !important; }
 
-/* Tags */
+/* Tags Base */
 .tag-pill {
     display: inline-block; padding: 4px 12px; border-radius: 99px;
     font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
     letter-spacing: 0.05em; margin-bottom: 1rem;
 }
-.tag-blue { background: #eff6ff; color: #3b82f6; }
-.tag-purple { background: #f5f3ff; color: #8b5cf6; }
-.tag-green { background: #ecfdf5; color: #10b981; } /* Novo Verde */
 
-/* --- CARDS DE FERRAMENTAS (Link Total) --- */
-/* Agora o card inteiro é um link block */
+/* --- CARDS DE FERRAMENTAS (Correção de Deformação) --- */
 .tool-card-link {
-    display: block; /* Garante que o link ocupe toda a área */
+    display: flex; /* Muda para Flex para controlar o layout interno */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinha ao topo */
     background: white;
     border-radius: 20px;
     padding: 2rem;
@@ -67,8 +68,10 @@ a { text-decoration: none !important; transition: all 0.2s ease; }
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     text-align: center;
-    height: 100%;
+    height: 100%; /* Ocupa a altura total da coluna do Grid */
+    width: 100%; /* Ocupa a largura total */
     position: relative;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho */
 }
 
 .tool-card-link:hover {
@@ -82,10 +85,24 @@ a { text-decoration: none !important; transition: all 0.2s ease; }
     display: flex; align-items: center; justify-content: center;
     font-size: 2.5rem; margin: 0 auto 1.5rem auto;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0; /* Impede o ícone de amassar */
 }
 
-/* --- FORMULÁRIO BREVO (Estilização Segura) --- */
-/* Wrapper externo para centralizar e dar sombra */
+/* Botão dentro do card */
+.btn-tool-fake {
+    margin-top: auto; /* Empurra o botão para o fundo do card */
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+.bg-indigo { background: #4f46e5; color: white; }
+.bg-indigo:hover { background: #4338ca; }
+.bg-gray { background: #f1f5f9; color: #94a3b8; }
+
+/* --- FORMULÁRIO BREVO --- */
 .form-wrapper-clean {
     background: white;
     padding: 1rem;
@@ -95,48 +112,24 @@ a { text-decoration: none !important; transition: all 0.2s ease; }
     max-width: 500px;
     margin: 0 auto;
 }
-
-/* Ocultar o fundo cinzento padrão do Brevo */
 .sib-form { background-color: transparent !important; padding: 0 !important; }
-
-/* Estilizar os Inputs do Brevo */
 #sib-container input {
-    border-radius: 8px !important;
-    border: 1px solid #cbd5e1 !important;
-    padding: 12px 16px !important;
-    font-family: 'Inter', sans-serif !important;
-    font-size: 1rem !important;
-    box-shadow: none !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-    background-color: #f8fafc !important;
+    border-radius: 8px !important; border: 1px solid #cbd5e1 !important;
+    padding: 12px 16px !important; font-family: 'Inter', sans-serif !important;
+    font-size: 1rem !important; background-color: #f8fafc !important;
+    box-shadow: none !important; width: 100% !important; box-sizing: border-box !important;
 }
-
-/* Foco nos inputs */
 #sib-container input:focus {
-    border-color: #6366f1 !important;
-    outline: 2px solid #e0e7ff !important;
+    border-color: #6366f1 !important; outline: 2px solid #e0e7ff !important;
     background-color: white !important;
 }
-
-/* Estilizar o Botão do Brevo */
 .sib-form-block__button {
-    background-color: #4f46e5 !important;
-    border-radius: 8px !important;
-    font-family: 'Inter', sans-serif !important;
-    font-weight: 700 !important;
-    font-size: 1rem !important;
-    padding: 14px !important;
-    width: 100% !important;
-    transition: background 0.3s !important;
-    color: white !important;
-    border: none !important;
+    background-color: #4f46e5 !important; border-radius: 8px !important;
+    font-family: 'Inter', sans-serif !important; font-weight: 700 !important;
+    font-size: 1rem !important; padding: 14px !important; width: 100% !important;
+    transition: background 0.3s !important; color: white !important; border: none !important;
     cursor: pointer !important;
 }
-.sib-form-block__button:hover {
-    background-color: #4338ca !important;
-}
-
-/* Ajustes de texto do Brevo */
+.sib-form-block__button:hover { background-color: #4338ca !important; }
 #sib-container label { font-family: 'Inter', sans-serif !important; font-weight: 600 !important; color: #334155 !important; }
 .sib-form-message-panel { border-radius: 8px !important; font-family: 'Inter', sans-serif !important; }
