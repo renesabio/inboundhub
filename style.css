@@ -2,91 +2,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;700&display=swap');
 
 /* --- GERAL --- */
-body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-h1, h2, h3 { font-family: 'Merriweather', serif; }
-a { text-decoration: none !important; transition: all 0.3s ease; }
+body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; color: #1e293b; }
+h1, h2, h3 { font-family: 'Merriweather', serif; color: #0f172a; }
+a { text-decoration: none !important; transition: all 0.2s ease; }
 
-/* --- HERO --- */
-.hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+/* --- HERO (Claro e Limpo) --- */
+.hero-section {
+    background-color: #ffffff;
+    background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+    background-size: 24px 24px; /* Textura de pontos sutil */
+}
 
 /* --- LOGO --- */
 .logo-brand { color: #0f172a; transition: color 0.3s ease; }
 .logo-brand:hover { color: #4f46e5; }
 
-/* --- CARDS DE ARTIGOS (Escuros) --- */
-.feature-card {
-    background: linear-gradient(145deg, #1e293b, #0f172a);
-    border-radius: 16px; padding: 2rem; color: white;
-    position: relative; overflow: hidden; border: 1px solid #334155;
-    transition: all 0.4s ease; display: block;
-}
-.feature-card:hover {
-    transform: translateY(-8px); border-color: #818cf8;
-    box-shadow: 0 20px 40px -10px rgba(79, 70, 229, 0.3);
-}
-.feature-tag {
-    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em;
-    text-transform: uppercase; color: #818cf8; margin-bottom: 1rem; display: block;
-}
-
-/* --- CARDS DE FERRAMENTAS (Design Novo e Chamativo) --- */
-.tool-card {
+/* --- CARDS DE ARTIGOS (Estilo Blog Clean) --- */
+.article-card {
     background: white;
     border: 1px solid #e2e8f0;
-    border-bottom: 4px solid #e2e8f0; /* Borda grossa embaixo */
-    border-radius: 16px;
-    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.article-card:hover {
+    border-color: #6366f1;
+    box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.1);
+    transform: translateY(-4px);
+}
+.tag-pill {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+/* Cores das Tags */
+.tag-blue { background: #eff6ff; color: #3b82f6; }
+.tag-purple { background: #f5f3ff; color: #8b5cf6; }
+.tag-indigo { background: #eef2ff; color: #6366f1; }
+
+/* --- CARDS DE FERRAMENTAS (Estilo "App Store") --- */
+.tool-card-modern {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     height: 100%;
 }
 
-/* Efeito Hover Poderoso */
-.tool-card:hover {
+.tool-card-modern:hover {
     transform: translateY(-8px);
-    border-bottom-color: #4f46e5; /* A borda fica roxa */
-    box-shadow: 0 20px 30px -10px rgba(79, 70, 229, 0.15);
+    box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.1);
+    border-color: #cbd5e1;
 }
 
-.tool-icon-box {
-    width: 64px; height: 64px;
-    background: #f1f5f9;
-    border-radius: 12px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1.8rem; margin-bottom: 1.5rem;
-    transition: background 0.3s ease, color 0.3s ease;
+.icon-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
-.tool-card:hover .tool-icon-box {
-    background: #e0e7ff;
-    color: #4338ca;
-}
-
-/* --- FORMULÁRIO BREVO (Wrapper) --- */
-.brevo-wrapper {
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+/* Botão dentro do card */
+.btn-tool {
+    margin-top: auto;
+    width: 100%;
     padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.2s;
 }
-.sib-form { background-color: transparent !important; padding: 0 !important; margin: 0 !important; }
-#sib-container input {
-    border-radius: 8px !important; border: 1px solid #cbd5e1 !important;
-    padding: 12px 16px !important; font-family: 'Inter', sans-serif !important;
-    font-size: 1rem !important; color: #1e293b !important; background-color: #f8fafc !important;
-    box-shadow: none !important; width: 100% !important; box-sizing: border-box !important;
+.btn-primary { background: #4f46e5; color: white; }
+.btn-primary:hover { background: #4338ca; }
+.btn-disabled { background: #f1f5f9; color: #94a3b8; cursor: not-allowed; }
+
+/* --- CONTAINER DO FORMULÁRIO (Proteção) --- */
+.form-wrapper-clean {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    max-width: 500px;
+    margin: 0 auto;
 }
-#sib-container input:focus {
-    border-color: #6366f1 !important; outline: 2px solid #e0e7ff !important;
-    background-color: white !important;
+
+/* Pequenos ajustes apenas para garantir que o Brevo não quebre o layout mobile */
+#sib-container {
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
 }
-.sib-form-block__button {
-    background-color: #4f46e5 !important; border-radius: 8px !important;
-    font-family: 'Inter', sans-serif !important; font-weight: 700 !important;
-    font-size: 1rem !important; padding: 14px !important; width: 100% !important;
-    transition: background 0.3s !important; margin-top: 10px !important;
-}
-.sib-form-block__button:hover { background-color: #4338ca !important; }
-#sib-container label { font-family: 'Inter', sans-serif !important; color: #334155 !important; }
-.sib-form-message-panel { border-radius: 8px !important; font-family: 'Inter', sans-serif !important; }
