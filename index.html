@@ -1,275 +1,75 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InboundHub | Estratégia e RevOps</title>
-    <meta name="description" content="Comunidade de estratégia, CRM e RevOps. Unindo dados e criatividade.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="stylesheet" href="style.css">
+/* Fontes - Apenas Inter (Moderno, sem serifa) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Para o Brevo */
 
-    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-    <style>
-        /* Correção específica para o Brevo não quebrar o layout */
-        .sib-input .input { padding: 12px !important; border-radius: 6px !important; border: 1px solid #cbd5e1 !important; }
-        .sib-form-block__button { background-color: #4f46e5 !important; /* Indigo-600 */ width: 100%; border-radius: 8px !important; padding: 14px !important; }
-        .sib-form-block__button:hover { background-color: #4338ca !important; /* Indigo-700 */ }
-    </style>
-</head>
-<body class="antialiased">
+/* --- GERAL --- */
+body { 
+    font-family: 'Inter', sans-serif; 
+    scroll-behavior: smooth; 
+    background-color: #f8fafc; /* Slate-50 */
+    color: #1e293b; /* Slate-800 */
+}
 
-    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex justify-between h-20 items-center">
-                <div class="flex items-center">
-                    <a href="#" class="text-2xl font-bold text-slate-900 tracking-tight hover:text-indigo-600 transition">
-                        Inbound<span class="text-indigo-600">Hub</span>
-                    </a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
-                    <a href="#artigos" class="hover:text-indigo-600 transition">Artigos</a>
-                    <a href="#ferramentas" class="hover:text-indigo-600 transition">Ferramentas</a>
-                    <a href="#comunidade" class="px-5 py-2.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">Comunidade</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+a { text-decoration: none !important; transition: all 0.3s ease; }
 
-    <div class="hero-bg text-white pt-24 pb-32">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <span class="inline-block py-1 px-3 rounded bg-indigo-500/20 border border-indigo-400/30 text-indigo-200 text-xs font-bold tracking-[0.2em] uppercase mb-8">Estratégia & Dados</span>
-            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-8 tracking-tight">
-                Marketing vai muito além <br>de <span class="text-indigo-400 italic">divulgar uma marca.</span>
-            </h1>
-            <p class="text-lg md:text-xl text-slate-300 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-                É sobre criar conexões reais, estruturar dados e construir uma presença que faz sentido. Somos o InboundHub: unimos a estratégia de Inbound à precisão do RevOps.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#comunidade" class="bg-indigo-500 text-white px-8 py-4 rounded-lg font-bold hover:bg-indigo-600 transition shadow-lg w-full sm:w-auto">
-                    Entrar na Comunidade
-                </a>
-                <a href="#ferramentas" class="bg-white/10 border border-white/20 text-white px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition w-full sm:w-auto backdrop-blur-sm">
-                    Acessar Ferramentas
-                </a>
-            </div>
-        </div>
-    </div>
+/* --- HERO (Tech Trust Gradient) --- */
+.hero-bg {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
 
-    <section class="py-20 bg-white">
-        <div class="max-w-3xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <span class="text-indigo-600 font-bold tracking-widest uppercase text-xs">Nosso Propósito</span>
-                <h2 class="text-3xl font-bold text-slate-900 mt-3">Clareza em meio ao ruído</h2>
-            </div>
-            <div class="prose prose-lg text-slate-600 mx-auto leading-relaxed">
-                <p class="mb-6">
-                    Vivemos uma era de excessos. Excesso de ferramentas, métricas de vaidade e promessas vazias. No meio disso tudo, o essencial se perde: <strong>o cliente.</strong>
-                </p>
-                <p class="border-l-4 border-indigo-500 pl-6 py-4 bg-indigo-50 rounded-r-lg font-medium text-slate-800">
-                    "Aqui no InboundHub, não idolatramos a complexidade. Usamos a tecnologia para simplificar processos e humanizar relações."
-                </p>
-            </div>
-        </div>
-    </section>
+/* --- CARDS --- */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
 
-    <section id="artigos" class="py-20 bg-slate-50">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center tracking-tight">Estudos & Reflexões</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                
-                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden card-hover flex flex-col h-full">
-                    <div class="p-8 flex flex-col h-full">
-                        <span class="text-xs font-bold text-indigo-600 uppercase mb-3">Estratégia</span>
-                        <h3 class="text-xl font-bold mb-3 text-slate-900 leading-snug">Inbound Marketing: A Arte da Atração</h3>
-                        <p class="text-slate-600 text-sm mb-6 flex-grow">Como construir um ecossistema que educa e converte, respeitando o tempo do cliente.</p>
-                        <a href="#" class="text-indigo-600 font-bold hover:text-indigo-800 text-sm flex items-center gap-2 uppercase tracking-wide mt-auto">
-                            Ler Artigo &rarr;
-                        </a>
-                    </div>
-                </div>
+/* --- BOTÕES "EM BREVE" --- */
+.btn-disabled {
+    background-color: #1e293b; /* Slate-800 */
+    color: #64748b; /* Slate-500 */
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: not-allowed;
+    border: 1px solid #334155;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
 
-                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8 opacity-75">
-                    <span class="text-xs font-bold text-slate-400 uppercase mb-3">Dados</span>
-                    <h3 class="text-xl font-bold mb-3 text-slate-900">A Verdade sobre o CRM</h3>
-                    <p class="text-slate-600 text-sm mb-6">A higiene de dados é mais importante que o software que você usa.</p>
-                    <span class="badge-soon">Em breve</span>
-                </div>
+/* --- FORMULÁRIO BREVO (CONTAINER) --- */
+.brevo-wrapper {
+    background: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    overflow: hidden;
+}
 
-                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8 opacity-75">
-                    <span class="text-xs font-bold text-slate-400 uppercase mb-3">RevOps</span>
-                    <h3 class="text-xl font-bold mb-3 text-slate-900">Operações de Receita</h3>
-                    <p class="text-slate-600 text-sm mb-6">Unificando marketing, vendas e sucesso em um único organismo.</p>
-                    <span class="badge-soon">Em breve</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="ferramentas" class="py-20 bg-slate-900 border-t border-slate-800">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-white mb-4">Caixa de Ferramentas</h2>
-                <p class="text-slate-400 max-w-2xl mx-auto">Utilitários práticos. Sem login, sem custo.</p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-6">
-                
-                <div class="bg-slate-800 rounded-xl p-8 border border-slate-700">
-                    <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl shadow-lg shadow-indigo-900/50">✨</div>
-                    <h3 class="text-xl font-bold text-white mb-2">Gerador de Briefing</h3>
-                    <p class="text-slate-400 text-sm mb-6">Crie a estrutura perfeita para suas campanhas usando nossa IA.</p>
-                    <span class="badge-soon" style="background: rgba(15, 23, 42, 0.5); border-color: #334155;">Em breve</span>
-                </div>
-
-                <div class="bg-slate-800 rounded-xl p-8 border border-slate-700">
-                    <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl shadow-lg shadow-green-900/50">✅</div>
-                    <h3 class="text-xl font-bold text-white mb-2">Checklist de Inbound</h3>
-                    <p class="text-slate-400 text-sm mb-6">Não esqueça nenhuma etapa. Do setup do CRM ao disparo de e-mail.</p>
-                    <span class="badge-soon" style="background: rgba(15, 23, 42, 0.5); border-color: #334155;">Em breve</span>
-                </div>
-
-                <div class="bg-slate-800 rounded-xl p-8 border border-slate-700">
-                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl shadow-lg shadow-blue-900/50">🧮</div>
-                    <h3 class="text-xl font-bold text-white mb-2">Calculadora de ROI</h3>
-                    <p class="text-slate-400 text-sm mb-6">Prove o valor do seu trabalho com projeções financeiras claras.</p>
-                    <span class="badge-soon" style="background: rgba(15, 23, 42, 0.5); border-color: #334155;">Em breve</span>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="comunidade" class="py-20 bg-indigo-50/50 border-t border-indigo-100">
-        <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2 text-left">
-                <span class="text-indigo-600 font-bold uppercase tracking-wider text-xs mb-2 block">Networking Real</span>
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">A Comunidade InboundHub</h2>
-                <p class="text-slate-600 mb-6 leading-relaxed">
-                    Troque ideias, tire dúvidas técnicas e acesse vagas exclusivas. Para manter o nível da discussão, o acesso é restrito.
-                </p>
-                <div class="space-y-4">
-                    <div class="flex items-center text-sm font-bold text-slate-700">
-                        <svg class="w-5 h-5 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Sem spam.
-                    </div>
-                    <div class="flex items-center text-sm font-bold text-slate-700">
-                        <svg class="w-5 h-5 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Foco em técnica.
-                    </div>
-                </div>
-            </div>
-            
-            <div class="md:w-1/2 w-full">
-                <div class="brevo-wrapper">
-                    <div class="text-center mb-6">
-                        <h3 class="font-bold text-slate-900">Solicitar Convite</h3>
-                        <p class="text-xs text-slate-500 mt-1">Cadastro via Brevo</p>
-                    </div>
-
-                    <div class="sib-form" style="text-align: center;">
-                      <div id="sib-form-container" class="sib-form-container">
-                        <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
-                          <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                            <span class="sib-form-message-panel__inner-text">Não foi, tente de novo.</span>
-                          </div>
-                        </div>
-                        <div></div>
-                        <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
-                          <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                            <span class="sib-form-message-panel__inner-text">Obrigado.</span>
-                          </div>
-                        </div>
-                        <div></div>
-                        <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:0px; direction:ltr">
-                          <form id="sib-form" method="POST" action="https://84eb807c.sibforms.com/serve/MUIFANVwsz4F8USqjUIl5hcoZa-q9OjDzV8DJeZXur5ZyZXSRCCRLT9nxbsClV7KKNofEI7tHlWyRQCNV1IKVhYlyF5FH-Sktf8kZRybqD8yAL0Dc27iBqqwYHa3uiSLu4ykV9jClDVqF9osmxJej5eU4hw67DDg0myA1qOLgdHkamNX3xjeH0iIbE7-wEJ6XUoiDo2kOg6tDUfP" data-type="subscription">
-                            <div style="padding: 8px 0;">
-                              <div class="sib-input sib-form-block">
-                                <div class="form__entry entry_block">
-                                  <div class="form__label-row ">
-                                    <label class="entry__label" style="font-weight: 700; text-align:left; font-size:14px; text-align:left; font-weight:700; font-family:'Inter', sans-serif; color:#3c4858;" for="NOME" data-required="*">Nome</label>
-                                    <div class="entry__field">
-                                      <input class="input " maxlength="200" type="text" id="NOME" name="NOME" autocomplete="off" data-required="true" required />
-                                    </div>
-                                  </div>
-                                  <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
-                                </div>
-                              </div>
-                            </div>
-                            <div style="padding: 8px 0;">
-                              <div class="sib-input sib-form-block">
-                                <div class="form__entry entry_block">
-                                  <div class="form__label-row ">
-                                    <label class="entry__label" style="font-weight: 700; text-align:left; font-size:14px; text-align:left; font-weight:700; font-family:'Inter', sans-serif; color:#3c4858;" for="EMAIL" data-required="*">E-mail</label>
-                                    <div class="entry__field">
-                                      <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" data-required="true" required />
-                                    </div>
-                                  </div>
-                                  <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
-                                </div>
-                              </div>
-                            </div>
-                            <div style="padding: 8px 0;">
-                              <div class="sib-optin sib-form-block" data-required="true">
-                                <div class="form__entry entry_mcq">
-                                  <div class="form__label-row ">
-                                    <div class="entry__choice" style="">
-                                      <label>
-                                        <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required />
-                                        <span class="checkbox checkbox_tick_positive"></span><span style="font-size:12px; text-align:left; font-family:'Inter', sans-serif; color:#3C4858; background-color:transparent;"><p>Aceito receber materiais de marketing.</p></span> </label>
-                                    </div>
-                                  </div>
-                                  <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
-                                </div>
-                              </div>
-                            </div>
-                            <div style="padding: 8px 0;">
-                              <div class="sib-form-block" style="text-align: left">
-                                <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:center; font-weight:700; font-family:'Inter', sans-serif; color:#FFFFFF; background-color:#4f46e5; border-radius:3px; border-width:0px;" form="sib-form" type="submit">
-                                  SOLICITAR CONVITE
-                                </button>
-                              </div>
-                            </div>
-                            <input type="text" name="email_address_check" value="" class="input--hidden">
-                            <input type="hidden" name="locale" value="pt">
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-slate-900 text-slate-400 py-12">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <p class="mb-2">© 2026 InboundHub. Todos os direitos reservados.</p>
-            <p class="text-sm">
-                Curadoria de <a href="https://www.linkedin.com/in/renesabio" target="_blank" class="text-indigo-400 hover:text-white transition">Renê Sábio</a>.
-            </p>
-        </div>
-    </footer>
-
-    <script>
-      window.REQUIRED_CODE_ERROR_MESSAGE = 'Escolha um código de país';
-      window.LOCALE = 'pt';
-      window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "A informação fornecida não é valida.";
-      window.REQUIRED_ERROR_MESSAGE = "Este campo não pode ser deixado em branco.";
-      window.GENERIC_INVALID_MESSAGE = "A informação fornecida não é valida.";
-      window.translation = {
-        common: {
-          selectedList: '{quantity} lista selecionada',
-          selectedLists: '{quantity} listas selecionadas',
-          selectedOption: '{quantity} selecionado',
-          selectedOptions: '{quantity} selecionados',
-        }
-      };
-      var AUTOHIDE = Boolean(0);
-    </script>
-    <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6Ld8-zQsAAAAAMSXVth5fUCZANUtKBb4hPOYNQR4&hl=pt" async defer></script>
-
-</body>
-</html>
+/* Força os inputs do Brevo a ficarem bonitos */
+#sib-container { background: transparent !important; border: none !important; padding: 0 !important; }
+.sib-input .input { 
+    padding: 12px 16px !important; 
+    border-radius: 8px !important; 
+    border: 1px solid #cbd5e1 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+.sib-form-block__button { 
+    background-color: #4f46e5 !important; /* Indigo-600 */ 
+    width: 100%; 
+    border-radius: 8px !important; 
+    padding: 16px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    cursor: pointer;
+}
+.sib-form-block__button:hover { background-color: #4338ca !important; }
