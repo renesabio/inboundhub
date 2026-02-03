@@ -6,18 +6,18 @@ body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; color: #1e293b
 h1, h2, h3 { font-family: 'Merriweather', serif; color: #0f172a; }
 a { text-decoration: none !important; transition: all 0.2s ease; }
 
-/* --- HERO (Claro e Limpo) --- */
+/* --- HERO --- */
 .hero-section {
     background-color: #ffffff;
     background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
-    background-size: 24px 24px; /* Textura de pontos sutil */
+    background-size: 24px 24px;
 }
 
 /* --- LOGO --- */
 .logo-brand { color: #0f172a; transition: color 0.3s ease; }
 .logo-brand:hover { color: #4f46e5; }
 
-/* --- CARDS DE ARTIGOS (Estilo Blog Clean) --- */
+/* --- CARDS DE ARTIGOS (Pilares) --- */
 .article-card {
     background: white;
     border: 1px solid #e2e8f0;
@@ -29,87 +29,114 @@ a { text-decoration: none !important; transition: all 0.2s ease; }
     flex-direction: column;
     justify-content: space-between;
 }
-.article-card:hover {
-    border-color: #6366f1;
-    box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.1);
-    transform: translateY(-4px);
-}
+
+/* Hover Genérico */
+.article-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); }
+
+/* Cores Específicas por Pilar (Borda e Texto) */
+/* Inbound (Azul) */
+.card-blue:hover { border-color: #3b82f6; }
+.text-blue-custom { color: #2563eb; }
+
+/* Dados (Roxo) */
+.card-purple:hover { border-color: #9333ea; }
+.text-purple-custom { color: #7e22ce; }
+
+/* RevOps (Verde) */
+.card-green:hover { border-color: #10b981; }
+.text-green-custom { color: #059669; }
+
+/* Tags */
 .tag-pill {
-    display: inline-block;
-    padding: 4px 12px;
-    border-radius: 99px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 1rem;
+    display: inline-block; padding: 4px 12px; border-radius: 99px;
+    font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.05em; margin-bottom: 1rem;
 }
-/* Cores das Tags */
 .tag-blue { background: #eff6ff; color: #3b82f6; }
 .tag-purple { background: #f5f3ff; color: #8b5cf6; }
-.tag-indigo { background: #eef2ff; color: #6366f1; }
+.tag-green { background: #ecfdf5; color: #10b981; } /* Novo Verde */
 
-/* --- CARDS DE FERRAMENTAS (Estilo "App Store") --- */
-.tool-card-modern {
+/* --- CARDS DE FERRAMENTAS (Link Total) --- */
+/* Agora o card inteiro é um link block */
+.tool-card-link {
+    display: block; /* Garante que o link ocupe toda a área */
     background: white;
     border-radius: 20px;
     padding: 2rem;
     border: 1px solid #f1f5f9;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     height: 100%;
+    position: relative;
 }
 
-.tool-card-modern:hover {
+.tool-card-link:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.1);
     border-color: #cbd5e1;
 }
 
 .icon-container {
-    width: 80px;
-    height: 80px;
-    border-radius: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    width: 80px; height: 80px; border-radius: 18px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2.5rem; margin: 0 auto 1.5rem auto;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
-/* Botão dentro do card */
-.btn-tool {
-    margin-top: auto;
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: background 0.2s;
-}
-.btn-primary { background: #4f46e5; color: white; }
-.btn-primary:hover { background: #4338ca; }
-.btn-disabled { background: #f1f5f9; color: #94a3b8; cursor: not-allowed; }
-
-/* --- CONTAINER DO FORMULÁRIO (Proteção) --- */
+/* --- FORMULÁRIO BREVO (Estilização Segura) --- */
+/* Wrapper externo para centralizar e dar sombra */
 .form-wrapper-clean {
     background: white;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 16px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     border: 1px solid #e2e8f0;
     max-width: 500px;
     margin: 0 auto;
 }
 
-/* Pequenos ajustes apenas para garantir que o Brevo não quebre o layout mobile */
-#sib-container {
-    padding: 0 !important;
-    background: transparent !important;
-    border: none !important;
+/* Ocultar o fundo cinzento padrão do Brevo */
+.sib-form { background-color: transparent !important; padding: 0 !important; }
+
+/* Estilizar os Inputs do Brevo */
+#sib-container input {
+    border-radius: 8px !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 12px 16px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 1rem !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    background-color: #f8fafc !important;
 }
+
+/* Foco nos inputs */
+#sib-container input:focus {
+    border-color: #6366f1 !important;
+    outline: 2px solid #e0e7ff !important;
+    background-color: white !important;
+}
+
+/* Estilizar o Botão do Brevo */
+.sib-form-block__button {
+    background-color: #4f46e5 !important;
+    border-radius: 8px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    padding: 14px !important;
+    width: 100% !important;
+    transition: background 0.3s !important;
+    color: white !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+.sib-form-block__button:hover {
+    background-color: #4338ca !important;
+}
+
+/* Ajustes de texto do Brevo */
+#sib-container label { font-family: 'Inter', sans-serif !important; font-weight: 600 !important; color: #334155 !important; }
+.sib-form-message-panel { border-radius: 8px !important; font-family: 'Inter', sans-serif !important; }
