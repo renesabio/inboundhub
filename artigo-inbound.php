@@ -6,7 +6,7 @@
     
     <title>Dossiê Inbound Marketing 2026: O Guia Completo | Inbound Hub</title>
     <meta name="description" content="O guia mais completo da internet sobre Inbound Marketing. Estratégias de IA, RevOps e Growth para 2026. Leitura técnica para gestores e especialistas.">
-    <link rel="canonical" href="https://inboundhub.com.br/artigo-inbound.html">
+    <link rel="canonical" href="https://inboundhub.com.br/artigo-inbound.php">
     <link rel="icon" type="image/png" href="favicon.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -67,7 +67,7 @@
         
         li { margin-bottom: 1rem; position: relative; }
         
-        /* Box de Insight (Correção Solicitada) */
+        /* Box de Insight */
         .insight-box {
             background-color: #eff6ff;
             border-left: 6px solid #2563eb;
@@ -109,18 +109,7 @@
 </head>
 <body class="bg-white font-sans text-slate-800">
 
-    <nav class="bg-white border-b border-slate-200 py-6">
-        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold tracking-tight logo-brand">
-                Inbound <span class="text-indigo-600">Hub</span>
-            </a>
-            <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-500">
-                <a href="index.html#pilares" class="hover:text-indigo-600">Pilares</a>
-                <a href="index.html#ferramentas" class="hover:text-indigo-600">Ferramentas</a>
-                <a href="index.html#comunidade" class="nav-btn">Comunidade</a>
-            </div>
-        </div>
-    </nav>
+    <?php include 'header.php'; ?>
 
     <header class="pt-24 pb-20 text-center border-b border-slate-100 bg-gradient-to-b from-slate-50 to-white">
         <div class="max-w-4xl mx-auto px-4">
@@ -350,7 +339,7 @@
                     <h4>Táticas de Guerra:</h4>
                     <ul class="space-y-3">
                         <li><strong>Smart Content:</strong> Quando um cliente logado visita seu site, não mostre o botão "Teste Grátis". Mostre "Falar com Suporte" ou "Ver Novidades". Personalize a experiência.</li>
-                        <li><strong>NPS (Net Promoter Score):</strong> Meça a satisfação obsessivamente. Um cliente detrator destrói 10 novos leads.</li>
+                        <li><strong>NPS (Net Promoter Score):</strong> Meça a satisfação constantemente. Um cliente detrator destrói 10 novos leads.</li>
                         <li><strong>Programas de Indicação:</strong> Incentive seus clientes a trazerem amigos em troca de benefícios reais.</li>
                     </ul>
                 </div>
@@ -474,7 +463,7 @@
                     A teoria é vital, mas o Inbound acontece na trincheira. O <strong>Inbound Hub</strong> é o espaço para trocar experiências reais, discutir estratégias de automação e acessar ferramentas exclusivas.
                 </p>
                 
-                <a href="index.html#comunidade" class="relative z-10 inline-flex items-center gap-3 bg-indigo-600 text-white font-bold py-5 px-12 rounded-full hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-indigo-200 hover:-translate-y-1 no-underline text-lg group">
+                <a href="index.php#comunidade" class="relative z-10 inline-flex items-center gap-3 bg-indigo-600 text-white font-bold py-5 px-12 rounded-full hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-indigo-200 hover:-translate-y-1 no-underline text-lg group">
                     Entrar para a Comunidade
                     <span class="group-hover:translate-x-1 transition-transform">→</span>
                 </a>
@@ -482,21 +471,7 @@
         </div>
     </section>
 
-    <footer class="bg-white border-t border-slate-200 py-12 text-slate-500">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-            <div class="mb-6 md:mb-0">
-                <span class="text-xl font-bold text-slate-900 tracking-tight">Inbound <span class="text-indigo-600">Hub</span></span>
-                <p class="text-sm mt-2 mb-3">Conectando profissionais e compartilhando aprendizados.</p>
-                <a href="https://www.linkedin.com/company/inbound-hub-oficial/" target="_blank" class="inline-flex items-center gap-1 text-sm font-bold text-[#0077b5] hover:underline">
-                    Siga o Hub no LinkedIn <span>→</span>
-                </a>
-            </div>
-            <div class="text-sm">
-                <p class="mb-1">© 2026 Inbound Hub. Todos os direitos reservados.</p>
-                <p>Curadoria: <a href="https://www.linkedin.com/in/renesabio/" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium transition">Renê Sábio</a></p>
-            </div>
-        </div>
-    </footer>
+    <?php include 'footer.php'; ?>
 
 </body>
 </html>
