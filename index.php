@@ -52,7 +52,7 @@
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <a href="artigo-inbound.html" class="article-card card-blue">
+                <a href="artigo-inbound.php" class="article-card card-blue">
                     <div>
                         <span class="tag-pill">Atração</span>
                         <h3 class="text-xl font-bold mb-3 text-slate-900">Inbound Marketing</h3>
@@ -63,7 +63,7 @@
                     <span class="accent-text font-bold text-sm mt-6 block">Ler mais →</span>
                 </a>
 
-                <a href="artigo-crm.html" class="article-card card-purple">
+                <a href="artigo-crm.php" class="article-card card-purple">
                     <div>
                         <span class="tag-pill">Dados</span>
                         <h3 class="text-xl font-bold mb-3 text-slate-900">CRM & Inteligência</h3>
@@ -74,7 +74,7 @@
                     <span class="accent-text font-bold text-sm mt-6 block">Ler mais →</span>
                 </a>
 
-                <a href="artigo-revops.html" class="article-card card-green">
+                <a href="artigo-revops.php" class="article-card card-green">
                     <div>
                         <span class="tag-pill">Processos</span>
                         <h3 class="text-xl font-bold mb-3 text-slate-900">RevOps</h3>
@@ -96,7 +96,7 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8 px-2">
-                <a href="gerador-briefing.html" class="tool-card-link">
+                <a href="gerador-briefing.php" class="tool-card-link">
                     <div class="icon-container bg-indigo-50 text-indigo-600">
                         ⚡
                     </div>
