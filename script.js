@@ -1,1 +1,0 @@
-console.log("InboundHub carregado.");
