@@ -1,6 +1,6 @@
 <nav class="bg-white border-b border-slate-200 py-6">
     <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
-        <a href="index.php" class="text-2xl font-bold tracking-tight logo-brand font-sans">
+        <a href="index.php" class="text-2xl font-bold tracking-tight logo-brand font-sans text-slate-900">
             Inbound <span class="text-indigo-600">Hub</span>
         </a>
         
