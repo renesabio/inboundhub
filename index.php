@@ -37,7 +37,7 @@
                 Conectando profissionais e compartilhando aprendizados.
             </p>
             <div class="flex justify-center gap-4">
-                <a href="#comunidade" class="bg-indigo-600 text-white px-8 py-4 rounded-full font-bold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200 no-underline">
+                <a href="#comunidade" class="bg-indigo-600 text-white px-8 py-4 rounded-full font-bold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">
                     Fazer parte do Hub
                 </a>
             </div>
@@ -97,27 +97,21 @@
 
             <div class="grid md:grid-cols-3 gap-8 px-2">
                 <a href="gerador-briefing.php" class="tool-card-link">
-                    <div class="icon-container bg-indigo-50 text-indigo-600">
-                        ⚡
-                    </div>
+                    <div class="icon-container bg-indigo-50 text-indigo-600">⚡</div>
                     <h3 class="text-lg font-bold text-slate-900">Gerador de Briefing</h3>
                     <p class="text-sm text-slate-500 mt-2 mb-6">Crie briefings técnicos usando IA em segundos.</p>
                     <span class="btn-tool-fake">Abrir Ferramenta</span>
                 </a>
 
                 <div class="tool-card-link card-disabled">
-                    <div class="icon-container bg-slate-100 text-slate-400">
-                        📋
-                    </div>
+                    <div class="icon-container bg-slate-100 text-slate-400">📋</div>
                     <h3 class="text-lg font-bold text-slate-600">Checklist CRM</h3>
                     <p class="text-sm text-slate-400 mt-2 mb-6">Auditoria de qualidade de dados.</p>
                     <span class="btn-tool-fake">Em Breve</span>
                 </div>
 
                 <div class="tool-card-link card-disabled">
-                    <div class="icon-container bg-slate-100 text-slate-400">
-                        🧮
-                    </div>
+                    <div class="icon-container bg-slate-100 text-slate-400">🧮</div>
                     <h3 class="text-lg font-bold text-slate-600">Calculadora ROI</h3>
                     <p class="text-sm text-slate-400 mt-2 mb-6">Simulador de retorno.</p>
                     <span class="btn-tool-fake">Em Breve</span>
@@ -149,18 +143,9 @@
 
             <div class="md:w-1/2 w-full">
                 <div class="brevo-wrapper">
-                    
                     <style>
-                      #sib-container input:-ms-input-placeholder {
-                        text-align: left;
-                        font-family: Helvetica, sans-serif;
-                        color: #c0ccda;
-                      }
-                      #sib-container input::placeholder {
-                        text-align: left;
-                        font-family: Helvetica, sans-serif;
-                        color: #c0ccda;
-                      }
+                      #sib-container input:-ms-input-placeholder { text-align: left; color: #c0ccda; }
+                      #sib-container input::placeholder { text-align: left; color: #c0ccda; }
                     </style>
                     <div class="sib-form" style="text-align: center; background-color: #EFF2F7;">
                       <div id="sib-form-container" class="sib-form-container">
@@ -231,7 +216,7 @@
                         </div>
                       </div>
                     </div>
-                    </div>
+                </div>
             </div>
         </div>
     </section>
