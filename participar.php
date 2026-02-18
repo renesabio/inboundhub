@@ -213,21 +213,7 @@
                           </div>
                         </div>
                         <div style="padding: 8px 0;">
-                          <div class="sib-captcha sib-form-block">
-                            <div class="form__entry entry_block">
-                              <div class="form__label-row ">
-                                <script>
-                                  function handleCaptchaResponse() {
-                                    var event = new Event('captchaChange');
-                                    document.getElementById('sib-captcha').dispatchEvent(event);
-                                  }
-                                </script>
-                                <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6Ld8-zQsAAAAAMSXVth5fUCZANUtKBb4hPOYNQR4" data-callback="handleCaptchaResponse" style="direction:ltr"></div>
-                              </div>
-                              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                              </label>
-                            </div>
-                          </div>
+                          <div class="g-recaptcha-v3" data-sitekey="6Ld8-zQsAAAAAMSXVth5fUCZANUtKBb4hPOYNQR4" style="display: none"></div>
                         </div>
                         <div style="padding: 8px 0;">
                           <div class="sib-form-block" style="text-align: left">
@@ -272,7 +258,7 @@
 
                 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 
-                <script src="https://www.google.com/recaptcha/api.js?hl=pt"></script>
+                <script src="https://www.google.com/recaptcha/api.js?render=6Ld8-zQsAAAAAMSXVth5fUCZANUtKBb4hPOYNQR4&hl=pt" async defer></script>
 
                 </div>
         </div>
