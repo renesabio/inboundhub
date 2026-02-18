@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -224,17 +223,36 @@
                 <div class="absolute top-0 right-0 w-64 h-64 bg-purple-600 rounded-full opacity-30 blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
                 <div class="absolute bottom-0 left-0 w-64 h-64 bg-indigo-600 rounded-full opacity-30 blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
 
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 relative z-10 font-serif">
-                    Implementar isso sozinho é difícil.
-                </h2>
-                <p class="text-slate-300 text-lg mb-10 max-w-xl mx-auto leading-relaxed relative z-10">
-                    Discutir arquitetura de dados e escolha de software é algo que fazemos com frequência na nossa comunidade. Junte-se para trocar experiências reais.
-                </p>
-                
-                <a href="participar.php" class="inline-flex items-center gap-2 bg-purple-600 text-white font-bold py-4 px-10 rounded-full hover:bg-purple-500 transition-all duration-300 shadow-lg hover:shadow-purple-500/50 hover:-translate-y-1 no-underline text-lg relative z-10">
-                    Discutir CRM na Comunidade
-                    <span>→</span>
-                </a>
+                <div class="relative z-10">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 font-serif border-none pb-0">
+                        Implementar isso sozinho é difícil.
+                    </h2>
+                    <p class="text-slate-300 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
+                        Discutir arquitetura de dados e escolha de software é algo que fazemos com frequência na nossa comunidade. Junte-se para trocar experiências reais.
+                    </p>
+                    
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                        <a href="participar.php" class="inline-flex items-center justify-center gap-2 bg-purple-600 text-white font-bold py-4 px-10 rounded-full hover:bg-purple-500 transition-all duration-300 shadow-lg hover:shadow-purple-500/50 hover:-translate-y-1 no-underline text-lg w-full md:w-auto">
+                            Discutir CRM na Comunidade
+                            <span>→</span>
+                        </a>
+                    </div>
+
+                    <div class="w-full h-px bg-slate-800 my-8"></div>
+
+                    <p class="text-slate-400 text-sm uppercase tracking-widest font-bold mb-6">Ou continue estudando</p>
+                    <div class="flex flex-col md:flex-row justify-center gap-4">
+                        
+                        <a href="artigo-inbound.php" class="inline-flex items-center justify-center gap-2 border border-blue-500/30 bg-blue-500/10 text-blue-300 font-semibold py-3 px-6 rounded-full hover:bg-blue-500/20 transition-all no-underline text-base w-full md:w-auto">
+                            <span>📘</span> Ler sobre Inbound
+                        </a>
+
+                        <a href="artigo-revops.php" class="inline-flex items-center justify-center gap-2 border border-green-500/30 bg-green-500/10 text-green-300 font-semibold py-3 px-6 rounded-full hover:bg-green-500/20 transition-all no-underline text-base w-full md:w-auto">
+                            <span>⚙️</span> Ler sobre RevOps
+                        </a>
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -243,7 +261,8 @@
 
     <style>
         /* ESTILOS ESPECÍFICOS DESTE ARTIGO */
-        h2 { 
+        /* Ajuste do H2 para não ter borda dentro do card escuro */
+        section h2 { 
             font-family: 'Merriweather', serif; 
             font-size: 2.25rem; 
             font-weight: 800; 
@@ -253,6 +272,14 @@
             line-height: 1.2;
             border-bottom: 1px solid #f1f5f9;
             padding-bottom: 1rem;
+        }
+
+        /* Remove borda do H2 dentro do card escuro */
+        .bg-slate-900 h2 {
+            border-bottom: none !important;
+            padding-bottom: 0 !important;
+            margin-top: 0 !important;
+            color: white !important;
         }
         
         h3 {
@@ -297,9 +324,8 @@
             width: 100%;
         }
         
-        /* Lista com marcadores customizados */
         ul.list-disc li::marker {
-            color: #9333ea; /* Roxo */
+            color: #9333ea;
             font-size: 1.2em;
         }
     </style>
