@@ -8,7 +8,7 @@
             <a href="index.php#pilares" class="hover:text-indigo-600 transition-colors no-underline">Pilares</a>
             <a href="index.php#ferramentas" class="hover:text-indigo-600 transition-colors no-underline">Ferramentas</a>
             
-            <a href="index.php#comunidade" class="bg-indigo-600 text-white px-5 py-2 rounded-full font-bold hover:bg-indigo-700 transition shadow-md hover:shadow-lg hover:-translate-y-0.5 no-underline">
+            <a href="participar.php" class="bg-indigo-600 text-white px-5 py-2 rounded-full font-bold hover:bg-indigo-700 transition shadow-md hover:shadow-lg hover:-translate-y-0.5 no-underline">
                 Comunidade
             </a>
         </div>
