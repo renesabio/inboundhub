@@ -1,3 +1,14 @@
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T99B7SCDSJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T99B7SCDSJ');
+</script>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6Ld8-zQsAAAAAMSXVth5fUCZANUtKBb4hPOYNQR4&hl=pt" async defer></script>
+
 <nav class="bg-white border-b border-slate-200 py-6 text-base leading-normal">
     <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
         
