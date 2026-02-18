@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -14,8 +15,7 @@
     <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
-
-    </head>
+</head>
 <body class="bg-white font-sans text-slate-800">
 
     <?php include 'header.php'; ?>
@@ -155,20 +155,17 @@
                 <li>Após a chamada, resume tudo e salva no histórico sem o humano digitar nada.</li>
             </ul>
 
-            <div class="insight-box bg-slate-900 text-white !border-l-0 rounded-xl relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-purple-600 rounded-full opacity-20 blur-3xl transform translate-x-1/3 -translate-y-1/3"></div>
-                <div class="relative z-10">
-                    <div class="insight-title text-white">
-                        <span class="text-3xl">🏗️</span>
-                        <span>O Desafio da Arquitetura: Monolito vs. Microsserviços</span>
-                    </div>
-                    <p class="text-slate-300 text-lg mb-4">
-                        Muitas empresas travam porque usam CRMs "Monolíticos" (tudo em um único bloco de código gigante). Se você precisa alterar o módulo de faturamento, corre o risco de quebrar o módulo de login.
-                    </p>
-                    <p class="text-slate-300 text-lg !mb-0">
-                        A tendência para 2026 é a migração para <strong>Microsserviços</strong>. Usando padrões como o <em>Strangler Fig Pattern</em>, as empresas vão "estrangulando" o sistema velho, substituindo pedaço por pedaço por serviços pequenos e independentes conectados via API. Isso traz resiliência: se o chat cair, o checkout continua funcionando.
-                    </p>
+            <div class="insight-box !bg-purple-50 !border-l-[6px] !border-purple-600 p-8 my-16 rounded-r-xl shadow-sm">
+                <div class="insight-title text-purple-800 font-extrabold text-2xl mb-4 flex items-center gap-3">
+                    <span class="text-3xl">🏗️</span>
+                    <span>O Desafio da Arquitetura: Monolito vs. Microsserviços</span>
                 </div>
+                <p class="text-slate-700 text-lg mb-4">
+                    Muitas empresas travam porque usam CRMs "Monolíticos" (tudo em um único bloco de código gigante). Se você precisa alterar o módulo de faturamento, corre o risco de quebrar o módulo de login.
+                </p>
+                <p class="text-slate-700 text-lg !mb-0">
+                    A tendência para 2026 é a migração para <strong>Microsserviços</strong>. Usando padrões como o <em>Strangler Fig Pattern</em>, as empresas vão "estrangulando" o sistema velho, substituindo pedaço por pedaço por serviços pequenos e independentes conectados via API. Isso traz resiliência: se o chat cair, o checkout continua funcionando.
+                </p>
             </div>
 
             <h2 id="integracao">A Integração CRM + ERP</h2>
@@ -231,7 +228,7 @@
                     Implementar isso sozinho é difícil.
                 </h2>
                 <p class="text-slate-300 text-lg mb-10 max-w-xl mx-auto leading-relaxed relative z-10">
-                    Discutimos arquitetura de dados, escolha de software e estratégias de adoção todos os dias na nossa comunidade.
+                    Discutir arquitetura de dados e escolha de software é algo que fazemos com frequência na nossa comunidade. Junte-se para trocar experiências reais.
                 </p>
                 
                 <a href="participar.php" class="inline-flex items-center gap-2 bg-purple-600 text-white font-bold py-4 px-10 rounded-full hover:bg-purple-500 transition-all duration-300 shadow-lg hover:shadow-purple-500/50 hover:-translate-y-1 no-underline text-lg relative z-10">
@@ -245,7 +242,7 @@
     <?php include 'footer.php'; ?>
 
     <style>
-        /* ESTILOS ESPECÍFICOS DESTE ARTIGO (SOBRESCREVENDO OU ADICIONANDO) */
+        /* ESTILOS ESPECÍFICOS DESTE ARTIGO */
         h2 { 
             font-family: 'Merriweather', serif; 
             font-size: 2.25rem; 
@@ -254,6 +251,8 @@
             margin-top: 4rem; 
             margin-bottom: 2rem;
             line-height: 1.2;
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 1rem;
         }
         
         h3 {
