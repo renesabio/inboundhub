@@ -2,7 +2,9 @@
     <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
         
         <div class="mb-6 md:mb-0">
-            <span class="text-xl font-bold text-slate-900 tracking-tight block">Inbound <span class="text-indigo-600">Hub</span></span>
+            <a href="/" class="text-xl font-bold text-slate-900 tracking-tight block no-underline hover:text-indigo-600 transition">
+                Inbound <span class="text-indigo-600">Hub</span>
+            </a>
             <p class="text-sm mt-2 mb-3">Conectando profissionais e compartilhando aprendizados.</p>
             
             <a href="https://www.linkedin.com/company/inbound-hub-oficial/" target="_blank" class="inline-flex items-center gap-1 text-sm font-bold text-[#0077b5] hover:underline no-underline">
