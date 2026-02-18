@@ -29,7 +29,7 @@
                 evoluir no <span class="text-indigo-600">inbound juntos.</span>
             </h1>
             <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto font-light">
-                Conectando profissionais e compartilhando aprendizados.
+                Conectando profissionais e compartilhando aprendizados reais do mercado.
             </p>
             <div class="flex justify-center gap-4">
                 <a href="participar.php" class="bg-indigo-600 text-white px-8 py-4 rounded-full font-bold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200 no-underline">
@@ -118,18 +118,18 @@
     <section class="py-24 bg-white border-t border-slate-200">
         <div class="max-w-4xl mx-auto px-4">
             <div class="bg-slate-900 rounded-[2.5rem] p-12 md:p-16 text-center shadow-2xl relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-600 rounded-full opacity-20 blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
-                <div class="absolute bottom-0 left-0 w-64 h-64 bg-indigo-600 rounded-full opacity-20 blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+                <div class="absolute top-0 right-0 w-64 h-64 bg-green-900 rounded-full opacity-30 blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-indigo-900 rounded-full opacity-30 blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
 
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 relative z-10 font-serif">
-                    Pronto para evoluir sua carreira?
+                    O mercado muda rápido. <br>Não jogue sozinho.
                 </h2>
                 <p class="text-slate-300 text-lg mb-10 max-w-xl mx-auto leading-relaxed relative z-10">
-                    Junte-se à nossa lista exclusiva. Receba frameworks, convites e conteúdos que não publicamos abertamente.
+                    Tire dúvidas técnicas, compartilhe seus bastidores e aprenda com quem está no campo de batalha. Uma comunidade real, no WhatsApp.
                 </p>
                 
                 <a href="participar.php" class="inline-flex items-center gap-2 bg-indigo-600 text-white font-bold py-4 px-10 rounded-full hover:bg-indigo-500 transition-all duration-300 shadow-lg hover:shadow-indigo-500/50 hover:-translate-y-1 no-underline text-lg relative z-10">
-                    Entrar para a Lista VIP
+                    Entrar para a Comunidade
                     <span>→</span>
                 </a>
             </div>
