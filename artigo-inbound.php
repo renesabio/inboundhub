@@ -94,8 +94,8 @@
             </p>
             
             <div class="space-y-8 my-12">
-                <div class="flex flex-col md:flex-row gap-6 p-6 border border-slate-200 rounded-xl hover:border-blue-300 transition bg-white shadow-sm group">
-                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-3xl flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">🎯</div>
+                <div class="flex flex-col md:flex-row gap-6 p-6 border border-slate-200 rounded-xl hover:border-blue-300 transition bg-white shadow-sm">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center text-3xl flex-shrink-0">🎯</div>
                     <div>
                         <h3 class="!mt-0 !mb-2 text-xl font-bold text-slate-900">1. Hiper-Personalização (Segment of One)</h3>
                         <p class="text-slate-600 !mb-0 text-sm">
@@ -104,8 +104,8 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row gap-6 p-6 border border-slate-200 rounded-xl hover:border-blue-300 transition bg-white shadow-sm group">
-                    <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center text-3xl flex-shrink-0 group-hover:bg-amber-500 group-hover:text-white transition-colors">⏳</div>
+                <div class="flex flex-col md:flex-row gap-6 p-6 border border-slate-200 rounded-xl hover:border-blue-300 transition bg-white shadow-sm">
+                    <div class="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center text-3xl flex-shrink-0">⏳</div>
                     <div>
                         <h3 class="!mt-0 !mb-2 text-xl font-bold text-slate-900">2. Funil Gravata Borboleta (Bow Tie)</h3>
                         <p class="text-slate-600 !mb-0 text-sm">
@@ -114,8 +114,8 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row gap-6 p-6 border border-slate-200 rounded-xl hover:border-blue-300 transition bg-white shadow-sm group">
-                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-lg flex items-center justify-center text-3xl flex-shrink-0 group-hover:bg-green-600 group-hover:text-white transition-colors">🔐</div>
+                <div class="flex flex-col md:flex-row gap-6 p-6 border border-slate-200 rounded-xl hover:border-blue-300 transition bg-white shadow-sm">
+                    <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center text-3xl flex-shrink-0">🔐</div>
                     <div>
                         <h3 class="!mt-0 !mb-2 text-xl font-bold text-slate-900">3. Marketing de Permissão Radical</h3>
                         <p class="text-slate-600 !mb-0 text-sm">
@@ -137,21 +137,17 @@
                 "Em um mundo de conteúdo sintético infinito, a opinião humana, a experiência vivida e a curadoria tornam-se os únicos bens de luxo."
             </blockquote>
 
-            <div class="insight-box bg-slate-900 text-white !border-l-0 rounded-[2rem] relative overflow-hidden p-10 my-16 shadow-xl">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full opacity-30 blur-3xl transform translate-x-1/3 -translate-y-1/3"></div>
-                
-                <div class="relative z-10">
-                    <div class="insight-title text-white flex items-center gap-4 mb-6">
-                        <span class="text-4xl">💡</span>
-                        <span class="text-2xl font-bold font-serif">O Paradoxo da Distribuição</span>
-                    </div>
-                    <p class="text-slate-300 text-lg mb-6 leading-relaxed">
-                        Se as IAs respondem as perguntas do usuário sem ele clicar no seu site (Zero-Click), como você gera tráfego?
-                    </p>
-                    <p class="text-slate-300 text-lg !mb-0 leading-relaxed font-light">
-                        A resposta está na <strong>profundidade</strong> e na <strong>comunidade</strong>. A IA responde o "O Quê" e o "Como" básico. Mas o "Porquê", os estudos de caso complexos e a conexão humana só acontecem em ambientes proprietários (sua newsletter, sua comunidade, seu evento). O site deixa de ser um panfleto e vira uma biblioteca técnica.
-                    </p>
+            <div class="insight-box !bg-blue-50 !border-l-[6px] !border-blue-600 p-8 my-16 rounded-r-xl shadow-sm">
+                <div class="insight-title text-blue-800 font-extrabold text-2xl mb-4 flex items-center gap-3">
+                    <span class="text-3xl">💡</span>
+                    <span>O Paradoxo da Distribuição</span>
                 </div>
+                <p class="text-slate-700 text-lg mb-4">
+                    Se as IAs respondem as perguntas do usuário sem ele clicar no seu site, como você gera tráfego?
+                </p>
+                <p class="text-slate-700 text-lg !mb-0">
+                    A resposta está na <strong>profundidade</strong> e na <strong>comunidade</strong>. A IA responde o "O Quê" e o "Como" básico. Mas o "Porquê", os estudos de caso complexos e a conexão humana só acontecem em ambientes proprietários (sua newsletter, sua comunidade, seu evento). O site deixa de ser um panfleto e vira uma biblioteca técnica.
+                </p>
             </div>
 
             <h2 id="conclusao" class="mt-20">Conclusão: Seja Útil ou Seja Ignorado</h2>
@@ -232,7 +228,7 @@
     <style>
         /* ESTILOS ESPECÍFICOS DESTE ARTIGO (AZUL) */
         
-        /* Tipografia de Revista */
+        /* Ajuste do H2 para não ter borda dentro do card escuro */
         section h2 { 
             font-family: 'Merriweather', serif; 
             font-size: 2.25rem; 
@@ -245,7 +241,7 @@
             padding-bottom: 1rem;
         }
 
-        /* Reset para o CTA escuro */
+        /* Remove borda do H2 dentro do card escuro */
         .bg-slate-900 h2 {
             border-bottom: none !important;
             padding-bottom: 0 !important;
@@ -295,9 +291,8 @@
             width: 100%;
         }
         
-        /* Lista com marcadores azuis */
         ul.list-disc li::marker {
-            color: #2563eb;
+            color: #2563eb; /* Azul */
             font-size: 1.2em;
         }
     </style>
