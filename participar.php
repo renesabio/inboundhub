@@ -26,7 +26,7 @@
     <main class="flex-grow flex items-center justify-center py-12 px-4">
         <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-start">
             
-            <div class="text-center md:text-left sticky top-8">
+            <div class="text-center md:text-left relative md:sticky md:top-8">
                 <div class="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm font-bold mb-6">
                     <span class="w-2 h-2 bg-green-600 rounded-full animate-pulse"></span>
                     Grupo Ativo no WhatsApp
