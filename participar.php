@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Participe do Inbound Hub | Comunidade Exclusiva</title>
+    <title>Comunidade Inbound Hub | WhatsApp</title>
     <link rel="icon" type="image/png" href="favicon.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -13,21 +13,64 @@
     <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
     <style>
         @font-face { font-display: block; font-family: Roboto; src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2") }
+        
+        /* Ajuste fino para o container do formulário ficar bonito sem quebrar o código */
+        .form-container-custom {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-radius: 1rem;
+            overflow: hidden;
+            background: white;
+        }
     </style>
 </head>
-<body class="bg-slate-50 min-h-screen flex flex-col justify-between">
+<body class="bg-slate-50 min-h-screen flex flex-col">
 
     <?php include 'header.php'; ?>
 
-    <main class="flex-grow flex items-center justify-center py-20 px-4">
-        <div class="max-w-md w-full">
+    <main class="flex-grow flex items-center justify-center py-12 px-4">
+        <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
             
-            <div class="text-center mb-10">
-                <h1 class="text-3xl font-bold text-slate-900 mb-4 font-serif">Bem-vindo ao Hub</h1>
-                <p class="text-slate-600">Preencha seus dados abaixo para acessar materiais exclusivos e receber novidades.</p>
+            <div class="text-center md:text-left order-2 md:order-1">
+                <div class="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm font-bold mb-6">
+                    <span class="w-2 h-2 bg-green-600 rounded-full animate-pulse"></span>
+                    Grupo Ativo no WhatsApp
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6 font-serif leading-tight">
+                    Troque experiências reais sobre <span class="text-green-600">Inbound</span>.
+                </h1>
+                
+                <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                    Chega de grupos parados ou cheios de spam. No Inbound Hub, focamos em:
+                </p>
+
+                <ul class="space-y-4 text-slate-700 font-medium mb-8 inline-block text-left">
+                    <li class="flex items-center gap-3">
+                        <div class="bg-green-100 p-1 rounded-full text-green-600">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        Tira-dúvidas técnico (CRM, SEO, Automação)
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="bg-green-100 p-1 rounded-full text-green-600">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        Estudos de caso e erros reais
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="bg-green-100 p-1 rounded-full text-green-600">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        Networking com quem está no campo de batalha
+                    </li>
+                </ul>
+
+                <p class="text-sm text-slate-400 italic">
+                    * Após o cadastro, você receberá o link de acesso por e-mail.
+                </p>
             </div>
 
-            <div class="bg-white p-2 rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+            <div class="order-1 md:order-2 w-full max-w-md mx-auto form-container-custom border border-slate-200">
                 
                 <style>
                   #sib-container input:-ms-input-placeholder { text-align: left; color: #c0ccda; }
@@ -42,7 +85,7 @@
                     </div>
                     <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
                       <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                        <span class="sib-form-message-panel__inner-text">Cadastro realizado com sucesso!</span>
+                        <span class="sib-form-message-panel__inner-text">Cadastro realizado. Verifique seu e-mail!</span>
                       </div>
                     </div>
                     <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:0px; direction:ltr">
@@ -91,10 +134,10 @@
                         </div>
                         <div style="padding: 8px 0;">
                           <div class="sib-form-block" style="text-align: left">
-                            <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#FFFFFF; background-color:#2152a2; border-radius:3px; border-width:0px;" form="sib-form" type="submit">
-                              QUERO ENTRAR
+                            <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#FFFFFF; background-color:#16a34a; border-radius:3px; border-width:0px;" form="sib-form" type="submit">
+                              ENTRAR NO GRUPO
                             </button>
-                          </div>
+                            </div>
                         </div>
                         <input type="text" name="email_address_check" value="" class="input--hidden">
                         <input type="hidden" name="locale" value="pt">
@@ -103,11 +146,6 @@
                   </div>
                 </div>
                 </div>
-            
-            <p class="text-center text-slate-400 text-sm mt-6">
-                Respeitamos sua privacidade. Zero spam.
-            </p>
-
         </div>
     </main>
 
@@ -116,6 +154,12 @@
     <script>
       window.REQUIRED_CODE_ERROR_MESSAGE = 'Campo obrigatório';
       window.LOCALE = 'pt';
+      window.EMAIL_INVALID_MESSAGE = "A informação fornecida não é valida.";
+      window.REQUIRED_ERROR_MESSAGE = "Este campo não pode ser deixado em branco.";
+      window.GENERIC_INVALID_MESSAGE = "A informação fornecida não é valida.";
+      window.translation = {
+        common: { selectedList: '{quantity} lista', selectedLists: '{quantity} listas' }
+      };
     </script>
     <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 
