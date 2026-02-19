@@ -36,6 +36,13 @@
             background: #d1fae5;
             border-radius: 2px;
         }
+        
+        .help-text {
+            font-size: 0.75rem; /* 12px */
+            color: #64748b; /* Slate-500 */
+            margin-top: 0.5rem;
+            line-height: 1.4;
+        }
     </style>
 </head>
 <body class="bg-slate-50 font-sans text-slate-800">
@@ -45,77 +52,119 @@
     <header class="bg-white border-b border-slate-200 py-12">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-xs uppercase tracking-widest mb-4 inline-block">
-                Ferramenta Executiva
+                Ferramenta de Planejamento
             </span>
             <h1 class="text-3xl md:text-5xl font-bold text-slate-900 font-serif mb-4">
                 Calculadora de <span class="text-emerald-600">Eficiência RevOps</span>
             </h1>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto">
-                Para o CFO, eficiência é corte de custos. Para RevOps, eficiência é <strong>capacidade de receita</strong>. Simule o impacto de otimizar seus processos ou contratar novas ferramentas.
+                Muitas vezes, a ineficiência é invisível. Esta ferramenta traduz "tempo perdido" em "dinheiro deixado na mesa", ajudando a justificar investimentos em tecnologia e processos.
             </p>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 py-12">
+    <section class="max-w-6xl mx-auto px-4 py-8">
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                <div class="text-emerald-600 text-2xl mb-3">👁️</div>
+                <h3 class="font-bold text-slate-900 mb-2">Capacidade Oculta</h3>
+                <p class="text-sm text-slate-500">
+                    Antes de contratar mais vendedores, descubra se você pode "ganhar" novos vendedores apenas removendo tarefas burocráticas do time atual.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                <div class="text-emerald-600 text-2xl mb-3">📉</div>
+                <h3 class="font-bold text-slate-900 mb-2">Custo de Oportunidade</h3>
+                <p class="text-sm text-slate-500">
+                    Cada hora que seu vendedor gasta preenchendo CRM manualmente é uma hora a menos negociando. Quanto isso custa na meta final?
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                <div class="text-emerald-600 text-2xl mb-3">🚀</div>
+                <h3 class="font-bold text-slate-900 mb-2">Justificativa de Investimento</h3>
+                <p class="text-sm text-slate-500">
+                    Use números sólidos para provar que aquela ferramenta de R$ 50k não é um custo, mas um investimento que retorna 3x mais.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-4 pb-20 pt-4">
         
         <div class="grid lg:grid-cols-12 gap-10">
             
             <div class="lg:col-span-5 space-y-8">
                 
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-                    <h3 class="flex items-center gap-2 font-bold text-slate-900 mb-6">
+                    <h3 class="flex items-center gap-2 font-bold text-slate-900 mb-6 text-lg">
                         <span class="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center text-sm">1</span>
-                        Estrutura Atual (Baseline)
+                        Sua Estrutura Comercial
                     </h3>
 
-                    <div class="space-y-5">
+                    <div class="space-y-6">
                         <div>
-                            <label class="block text-sm font-semibold text-slate-600 mb-2">Tamanho do Time (Reps)</label>
+                            <label class="block text-sm font-semibold text-slate-800 mb-2">Tamanho do Time Comercial</label>
                             <input type="number" id="teamSize" value="10" class="w-full border border-slate-300 rounded-lg p-3 focus:ring-2 focus:ring-emerald-500 outline-none transition font-mono text-slate-700">
+                            <p class="help-text">
+                                Considere vendedores (Closers), SDRs e BDRs. Apenas quem tem meta de receita ou pipeline.
+                            </p>
                         </div>
                         
                         <div>
-                            <label class="block text-sm font-semibold text-slate-600 mb-2">Meta Anual por Vendedor (Quota)</label>
+                            <label class="block text-sm font-semibold text-slate-800 mb-2">Meta Anual por Vendedor (Quota)</label>
                             <div class="relative">
                                 <span class="absolute left-3 top-3 text-slate-400">R$</span>
                                 <input type="number" id="annualQuota" value="1200000" class="w-full border border-slate-300 rounded-lg p-3 pl-10 focus:ring-2 focus:ring-emerald-500 outline-none transition font-mono text-slate-700">
                             </div>
+                            <p class="help-text">
+                                Qual a receita média esperada por cabeça/ano? Se houver variação, faça uma média ponderada.
+                            </p>
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-slate-600 mb-2">Custo Total por Vendedor/Ano (Salário + Encargos)</label>
+                            <label class="block text-sm font-semibold text-slate-800 mb-2">Custo Total por Vendedor (Ano)</label>
                             <div class="relative">
                                 <span class="absolute left-3 top-3 text-slate-400">R$</span>
                                 <input type="number" id="annualCost" value="150000" class="w-full border border-slate-300 rounded-lg p-3 pl-10 focus:ring-2 focus:ring-emerald-500 outline-none transition font-mono text-slate-700">
                             </div>
-                            <p class="text-xs text-slate-400 mt-1">*Inclua comissões, ferramentas e encargos.</p>
+                            <p class="help-text">
+                                Custo "Fully Loaded": Salário + Comissões + Impostos + Benefícios + Licenças de Software.
+                            </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-                    <h3 class="flex items-center gap-2 font-bold text-slate-900 mb-6">
+                    <h3 class="flex items-center gap-2 font-bold text-slate-900 mb-6 text-lg">
                         <span class="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center text-sm">2</span>
-                        Investimento & Impacto
+                        O Cenário de Otimização
                     </h3>
 
                     <div class="space-y-6">
                         <div>
-                            <label class="block text-sm font-semibold text-slate-600 mb-2">Custo do Projeto/Ferramenta (Anual)</label>
+                            <label class="block text-sm font-semibold text-slate-800 mb-2">Investimento Necessário (Ano 1)</label>
                             <div class="relative">
                                 <span class="absolute left-3 top-3 text-slate-400">R$</span>
                                 <input type="number" id="investmentCost" value="50000" class="w-full border border-slate-300 rounded-lg p-3 pl-10 focus:ring-2 focus:ring-emerald-500 outline-none transition font-mono text-slate-700">
                             </div>
+                            <p class="help-text">
+                                Custo de implementação, consultoria e licenças da nova ferramenta/processo no primeiro ano.
+                            </p>
                         </div>
 
                         <div>
                             <div class="flex justify-between items-center mb-4">
-                                <label class="block text-sm font-semibold text-slate-600">Ganho de Eficiência Estimado</label>
+                                <label class="block text-sm font-semibold text-slate-800">Ganho de Eficiência Estimado</label>
                                 <span id="efficiencyDisplay" class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-1 rounded">10%</span>
                             </div>
                             <input type="range" id="efficiencyRange" min="1" max="50" value="10" class="w-full h-2 bg-emerald-100 rounded-lg appearance-none cursor-pointer">
-                            <p class="text-xs text-slate-400 mt-2">
-                                Ex: Reduzir tempo de cadastro no CRM, automação de e-mails, IA para transcrição.
+                            <div class="grid grid-cols-3 text-[10px] text-slate-400 mt-2 text-center">
+                                <span>5%: Pequenos Ajustes</span>
+                                <span>15%: Automação Forte</span>
+                                <span>30%+: IA / Reestruturação</span>
+                            </div>
+                            <p class="help-text mt-3">
+                                Quanto tempo o time economizará? Ex: IA transcrevendo chamadas economiza 15% do tempo.
                             </p>
                         </div>
                     </div>
@@ -138,8 +187,8 @@
                             <div class="border-t md:border-t-0 md:border-l border-slate-700 pt-6 md:pt-0 md:pl-8">
                                 <p class="text-slate-400 uppercase tracking-widest text-xs font-bold mb-2">Receita Potencial Desbloqueada</p>
                                 <h2 id="revenueUnlocked" class="text-4xl font-bold text-white mb-2">R$ 0</h2>
-                                <p class="text-xs text-slate-400 leading-relaxed">
-                                    Valor adicional que seu time pode gerar usando o tempo economizado para vender.
+                                <p class="text-xs text-slate-400 leading-relaxed mt-2">
+                                    Este é o valor adicional que seu time atual pode gerar se usar o tempo economizado para vender mais.
                                 </p>
                             </div>
                         </div>
@@ -154,8 +203,8 @@
                             <div>
                                 <p class="text-xs font-bold text-slate-500 uppercase mb-1">Capacidade Oculta</p>
                                 <h4 id="headcountGain" class="text-2xl font-bold text-slate-900">0 Reps</h4>
-                                <p class="text-xs text-slate-400 mt-1">
-                                    Equivale a contratar <span id="headcountGainText">0</span> novos vendedores sem custo adicional.
+                                <p class="text-xs text-slate-500 mt-1">
+                                    Equivale a contratar <strong id="headcountGainText" class="text-slate-800">0</strong> novos vendedores "de graça" (sem aumentar a folha de pagamento).
                                 </p>
                             </div>
                         </div>
@@ -167,8 +216,8 @@
                             <div>
                                 <p class="text-xs font-bold text-slate-500 uppercase mb-1">Horas Salvas / Ano</p>
                                 <h4 id="hoursSaved" class="text-2xl font-bold text-slate-900">0 h</h4>
-                                <p class="text-xs text-slate-400 mt-1">
-                                    Tempo devolvido ao time para atividades de alto valor (Selling Time).
+                                <p class="text-xs text-slate-500 mt-1">
+                                    Horas devolvidas ao time para focar em <em>Selling Time</em> (atividades nobres).
                                 </p>
                             </div>
                         </div>
@@ -227,22 +276,15 @@
 
             // 3. Receita Desbloqueada
             // Lógica: Se o vendedor vende X em 100% do tempo, e agora ele tem +10% de tempo, ele pode vender X * 10% a mais?
-            // Vamos aplicar um fator de conservadorismo de 0.8 (nem todo tempo salvo vira venda)
+            // Vamos aplicar um fator de conservadorismo de 0.8 (nem todo tempo salvo vira venda imediata, mas é capacidade disponível)
             const conservativeFactor = 0.8; 
             const revenuePotential = (teamSize * annualQuota) * (efficiency / 100) * conservativeFactor;
 
-            // 4. Economia de Custo Operacional (Opcional, mas bom para ROI)
-            // Se eu não preciso contratar esses 'headcountGain', quanto economizei?
-            const costSavings = headcountGain * annualCost;
-
-            // 5. Lucro Líquido do Projeto (Receita Adicional - Custo Investimento)
-            // Nota: RevOps geralmente olha Revenue Impact. Se quisermos ser puristas financeiramente, somamos Cost Savings.
-            // Vamos focar no Revenue Impact + Cost Savings (Total Economic Impact)
-            const totalImpact = revenuePotential; // Simplificando para focar em crescimento
-            
+            // 4. Lucro Líquido do Projeto 
+            const totalImpact = revenuePotential; 
             const netReturn = totalImpact - investment;
             
-            // 6. ROI
+            // 5. ROI
             let roi = 0;
             if (investment > 0) {
                 roi = (netReturn / investment) * 100;
