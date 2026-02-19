@@ -38,7 +38,7 @@
                 Ferramenta Gratuita
             </span>
             <h1 class="text-3xl md:text-5xl font-bold text-slate-900 font-serif mb-4">
-                Gerador de Briefing <span class="text-indigo-600">Perfect Prompt™</span>
+                Gerador de Briefing <span class="text-indigo-600">com IA</span>
             </h1>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto">
                 Pare de receber respostas genéricas da IA. Preencha os campos abaixo e geraremos um <strong>prompt de engenharia avançada</strong> para você colar no ChatGPT e obter um plano de marketing impecável.
