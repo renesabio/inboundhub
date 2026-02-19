@@ -17,16 +17,23 @@
             overflow: hidden;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
+        /* Ajuste fino para o Brevo não estourar */
+        #sib-container {
+            max-width: 100% !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
     </style>
 </head>
 <body class="bg-slate-50 min-h-screen flex flex-col">
 
     <?php include 'header.php'; ?>
 
-    <main class="flex-grow flex items-center justify-center py-12 px-4">
-        <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-start">
+    <main class="flex-grow flex items-start justify-center py-12 px-4">
+        
+        <div class="max-w-6xl w-full grid lg:grid-cols-2 gap-12 items-start">
             
-            <div class="text-center md:text-left relative md:sticky md:top-8">
+            <div class="text-center lg:text-left relative lg:sticky lg:top-8 order-1">
                 <div class="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm font-bold mb-6">
                     <span class="w-2 h-2 bg-green-600 rounded-full animate-pulse"></span>
                     Grupo Ativo no WhatsApp
@@ -66,7 +73,7 @@
                 </p>
             </div>
 
-            <div class="w-full max-w-md mx-auto form-wrapper">
+            <div class="w-full max-w-lg mx-auto form-wrapper order-2">
                 
                 <style>
                   @font-face {
@@ -119,7 +126,7 @@
                     <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
                       <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
                         <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                          <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+                          <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-12.536-28-28-28z" />
                         </svg>
                         <span class="sib-form-message-panel__inner-text">
                                                   Sua assinatura não pôde ser validada.
