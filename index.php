@@ -98,7 +98,7 @@
 
             <div class="grid md:grid-cols-3 gap-8">
                 
-                <a href="gerador-briefing.php" class="tool-card-dark group bg-slate-900 rounded-3xl p-8 border border-slate-800 shadow-xl relative overflow-hidden flex flex-col h-full z-10">
+                <a href="gerador-briefing.php" class="tool-card-dark group bg-slate-900 rounded-3xl p-8 border border-slate-800 shadow-xl relative overflow-hidden flex flex-col h-full z-10 block">
                     <div class="top-bar absolute top-0 left-0 w-full h-1.5 bg-indigo-500"></div>
                     <div class="absolute -right-6 -top-6 w-32 h-32 bg-indigo-600/20 rounded-full blur-3xl group-hover:bg-indigo-500/30 transition duration-500 -z-10"></div>
                     
@@ -120,7 +120,7 @@
                     </div>
                 </a>
 
-                <a href="checklist-crm.php" class="tool-card-dark group bg-slate-900 rounded-3xl p-8 border border-slate-800 shadow-xl relative overflow-hidden flex flex-col h-full z-10">
+                <a href="checklist-crm.php" class="tool-card-dark group bg-slate-900 rounded-3xl p-8 border border-slate-800 shadow-xl relative overflow-hidden flex flex-col h-full z-10 block">
                     <div class="top-bar absolute top-0 left-0 w-full h-1.5 bg-purple-500"></div>
                     <div class="absolute -right-6 -top-6 w-32 h-32 bg-purple-600/20 rounded-full blur-3xl group-hover:bg-purple-500/30 transition duration-500 -z-10"></div>
                     
@@ -142,7 +142,7 @@
                     </div>
                 </a>
 
-                <a href="calculadora-roi.php" class="tool-card-dark group bg-slate-900 rounded-3xl p-8 border border-slate-800 shadow-xl relative overflow-hidden flex flex-col h-full z-10">
+                <a href="calculadora-roi.php" class="tool-card-dark group bg-slate-900 rounded-3xl p-8 border border-slate-800 shadow-xl relative overflow-hidden flex flex-col h-full z-10 block">
                     <div class="top-bar absolute top-0 left-0 w-full h-1.5 bg-emerald-500"></div>
                     <div class="absolute -right-6 -top-6 w-32 h-32 bg-emerald-600/20 rounded-full blur-3xl group-hover:bg-emerald-500/30 transition duration-500 -z-10"></div>
                     
@@ -179,7 +179,7 @@
 
             <div class="grid md:grid-cols-3 gap-8">
                 
-                <article class="group bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 hover:border-blue-300 transition-colors duration-300 flex flex-col h-full">
+                <a href="artigo-inbound.php" class="group bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 hover:border-blue-300 transition-colors duration-300 flex flex-col h-full block">
                     <div class="h-2 bg-blue-500 w-full"></div>
                     <div class="p-8 flex flex-col h-full">
                         <div class="flex items-center justify-between mb-6">
@@ -190,18 +190,16 @@
                             </span>
                         </div>
                         <h3 class="text-2xl font-bold text-slate-900 font-serif mb-4 leading-tight group-hover:text-blue-600 transition-colors">
-                            <a href="artigo-inbound.php" class="before:absolute before:inset-0">
-                                O Fim do "Ebook por E-mail": AEO e o Futuro Zero-Click.
-                            </a>
+                            O Fim do "Ebook por E-mail": AEO e o Futuro Zero-Click.
                         </h3>
                         <p class="text-slate-500 leading-relaxed mb-8 flex-grow">
                             Como a IA Generativa mudou as regras do SEO e por que a hiper-personalização é a única saída para sobreviver no mercado digital.
                         </p>
                         <div class="text-blue-600 font-bold text-sm uppercase tracking-wide group-hover:translate-x-1 transition-transform">Ler Dossiê →</div>
                     </div>
-                </article>
+                </a>
 
-                <article class="group bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 hover:border-indigo-300 transition-colors duration-300 flex flex-col h-full relative">
+                <a href="artigo-crm.php" class="group bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 hover:border-indigo-300 transition-colors duration-300 flex flex-col h-full block">
                     <div class="h-2 bg-indigo-500 w-full"></div>
                     <div class="p-8 flex flex-col h-full">
                         <div class="flex items-center justify-between mb-6">
@@ -212,18 +210,16 @@
                             </span>
                         </div>
                         <h3 class="text-2xl font-bold text-slate-900 font-serif mb-4 leading-tight group-hover:text-indigo-600 transition-colors">
-                            <a href="artigo-crm.php" class="before:absolute before:inset-0">
-                                CRM 2026: Da "Agenda Digital" ao Cérebro da Operação.
-                            </a>
+                            CRM 2026: Da "Agenda Digital" ao Cérebro da Operação.
                         </h3>
                         <p class="text-slate-500 leading-relaxed mb-8 flex-grow">
                             Agentes de IA autônomos, Arquitetura de Microsserviços e a quebra definitiva dos silos entre Front-Office e Back-Office.
                         </p>
                         <div class="text-indigo-600 font-bold text-sm uppercase tracking-wide group-hover:translate-x-1 transition-transform">Ler Dossiê →</div>
                     </div>
-                </article>
+                </a>
 
-                <article class="group bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 hover:border-emerald-300 transition-colors duration-300 flex flex-col h-full relative">
+                <a href="artigo-revops.php" class="group bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 hover:border-emerald-300 transition-colors duration-300 flex flex-col h-full block">
                     <div class="h-2 bg-emerald-500 w-full"></div>
                     <div class="p-8 flex flex-col h-full">
                         <div class="flex items-center justify-between mb-6">
@@ -234,16 +230,14 @@
                             </span>
                         </div>
                         <h3 class="text-2xl font-bold text-slate-900 font-serif mb-4 leading-tight group-hover:text-emerald-600 transition-colors">
-                            <a href="artigo-revops.php" class="before:absolute before:inset-0">
-                                RevOps: O Fim da Guerra entre Marketing e Vendas.
-                            </a>
+                            RevOps: O Fim da Guerra entre Marketing e Vendas.
                         </h3>
                         <p class="text-slate-500 leading-relaxed mb-8 flex-grow">
                             Como unificar processos, dados e tecnologia em uma única operação de receita para parar de perder dinheiro pelo ralo.
                         </p>
                         <div class="text-emerald-600 font-bold text-sm uppercase tracking-wide group-hover:translate-x-1 transition-transform">Ler Dossiê →</div>
                     </div>
-                </article>
+                </a>
 
             </div>
         </div>
