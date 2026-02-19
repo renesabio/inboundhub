@@ -20,8 +20,16 @@
         }
         .tool-card-dark:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
             border-color: rgba(99, 102, 241, 0.5); /* Indigo-500 border on hover */
+        }
+        .tool-card-dark .top-bar {
+            transition: transform 0.4s ease;
+            transform-origin: left;
+            transform: scaleX(0);
+        }
+        .tool-card-dark:hover .top-bar {
+            transform: scaleX(1);
         }
         
         /* Pattern de fundo discreto (Hero) */
@@ -43,7 +51,7 @@
         }
     </style>
 </head>
-<body class="bg-slate-50 font-sans text-slate-800">
+<body class="bg-white font-sans text-slate-800">
 
     <?php include 'header.php'; ?>
 
@@ -79,27 +87,26 @@
         </div>
     </header>
 
-    <section id="ferramentas" class="py-24 px-4 bg-slate-900 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
-        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none"></div>
-
+    <section id="ferramentas" class="py-24 px-4 bg-slate-50 relative overflow-hidden">
         <div class="max-w-6xl mx-auto relative z-10">
             <div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 gap-4">
                 <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white font-serif">Apoio Estratégico</h2>
-                    <p class="text-slate-400 mt-3 text-lg">Diagnósticos e utilitários técnicos para a nossa comunidade.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 font-serif">Apoio Estratégico</h2>
+                    <p class="text-slate-500 mt-3 text-lg">Diagnósticos e utilitários técnicos para a nossa comunidade.</p>
                 </div>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 
-                <a href="gerador-briefing.php" class="tool-card-dark group bg-slate-800/80 backdrop-blur-sm rounded-3xl p-8 border border-slate-700 relative overflow-hidden flex flex-col h-full">
+                <a href="gerador-briefing.php" class="tool-card-dark group bg-slate-900 rounded-3xl p-8 border border-slate-800 shadow-xl relative overflow-hidden flex flex-col h-full z-10">
+                    <div class="top-bar absolute top-0 left-0 w-full h-1.5 bg-indigo-500"></div>
+                    <div class="absolute -right-6 -top-6 w-32 h-32 bg-indigo-600/20 rounded-full blur-3xl group-hover:bg-indigo-500/30 transition duration-500 -z-10"></div>
                     
                     <div class="flex justify-between items-start mb-8">
-                        <div class="w-14 h-14 bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 rounded-2xl flex items-center justify-center text-2xl shadow-sm">
+                        <div class="w-14 h-14 bg-slate-800 border border-slate-700 text-indigo-400 rounded-2xl flex items-center justify-center text-2xl shadow-inner">
                             ✨
                         </div>
-                        <span class="bg-slate-900/50 text-slate-300 text-xs font-bold px-3 py-1 rounded-full border border-slate-700">IA Generativa</span>
+                        <span class="bg-slate-800 text-slate-300 text-xs font-bold px-3 py-1 rounded-full border border-slate-700">IA Generativa</span>
                     </div>
                     
                     <h3 class="text-2xl font-bold text-white mb-3 font-serif">Gerador de Briefing</h3>
@@ -113,13 +120,15 @@
                     </div>
                 </a>
 
-                <a href="checklist-crm.php" class="tool-card-dark group bg-slate-800/80 backdrop-blur-sm rounded-3xl p-8 border border-slate-700 relative overflow-hidden flex flex-col h-full">
+                <a href="checklist-crm.php" class="tool-card-dark group bg-slate-900 rounded-3xl p-8 border border-slate-800 shadow-xl relative overflow-hidden flex flex-col h-full z-10">
+                    <div class="top-bar absolute top-0 left-0 w-full h-1.5 bg-purple-500"></div>
+                    <div class="absolute -right-6 -top-6 w-32 h-32 bg-purple-600/20 rounded-full blur-3xl group-hover:bg-purple-500/30 transition duration-500 -z-10"></div>
                     
                     <div class="flex justify-between items-start mb-8">
-                        <div class="w-14 h-14 bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 rounded-2xl flex items-center justify-center text-2xl shadow-sm">
+                        <div class="w-14 h-14 bg-slate-800 border border-slate-700 text-purple-400 rounded-2xl flex items-center justify-center text-2xl shadow-inner">
                             📊
                         </div>
-                        <span class="bg-slate-900/50 text-slate-300 text-xs font-bold px-3 py-1 rounded-full border border-slate-700">Auditoria</span>
+                        <span class="bg-slate-800 text-slate-300 text-xs font-bold px-3 py-1 rounded-full border border-slate-700">Auditoria</span>
                     </div>
                     
                     <h3 class="text-2xl font-bold text-white mb-3 font-serif">Diagnóstico CRM</h3>
@@ -127,19 +136,21 @@
                         Descubra o real nível de maturidade da sua operação de vendas. Sua empresa usa dados para prever ou apenas para registrar?
                     </p>
                     
-                    <div class="flex items-center text-indigo-400 font-bold text-sm uppercase tracking-wide">
+                    <div class="flex items-center text-purple-400 font-bold text-sm uppercase tracking-wide">
                         Iniciar Diagnóstico
                         <svg class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                     </div>
                 </a>
 
-                <a href="calculadora-roi.php" class="tool-card-dark group bg-slate-800/80 backdrop-blur-sm rounded-3xl p-8 border border-slate-700 relative overflow-hidden flex flex-col h-full">
+                <a href="calculadora-roi.php" class="tool-card-dark group bg-slate-900 rounded-3xl p-8 border border-slate-800 shadow-xl relative overflow-hidden flex flex-col h-full z-10">
+                    <div class="top-bar absolute top-0 left-0 w-full h-1.5 bg-emerald-500"></div>
+                    <div class="absolute -right-6 -top-6 w-32 h-32 bg-emerald-600/20 rounded-full blur-3xl group-hover:bg-emerald-500/30 transition duration-500 -z-10"></div>
                     
                     <div class="flex justify-between items-start mb-8">
-                        <div class="w-14 h-14 bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 rounded-2xl flex items-center justify-center text-2xl shadow-sm">
+                        <div class="w-14 h-14 bg-slate-800 border border-slate-700 text-emerald-400 rounded-2xl flex items-center justify-center text-2xl shadow-inner">
                             💰
                         </div>
-                        <span class="bg-slate-900/50 text-slate-300 text-xs font-bold px-3 py-1 rounded-full border border-slate-700">Calculadora</span>
+                        <span class="bg-slate-800 text-slate-300 text-xs font-bold px-3 py-1 rounded-full border border-slate-700">Calculadora</span>
                     </div>
                     
                     <h3 class="text-2xl font-bold text-white mb-3 font-serif">Calculadora RevOps</h3>
@@ -147,7 +158,7 @@
                         Traduza eficiência operacional em receita. Simule o impacto financeiro de otimizar processos ou adotar novas tecnologias.
                     </p>
                     
-                    <div class="flex items-center text-indigo-400 font-bold text-sm uppercase tracking-wide">
+                    <div class="flex items-center text-emerald-400 font-bold text-sm uppercase tracking-wide">
                         Calcular ROI
                         <svg class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                     </div>
