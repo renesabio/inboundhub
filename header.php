@@ -9,8 +9,7 @@
 
 <script src="https://www.google.com/recaptcha/api.js?render=6Ld8-zQsAAAAAMSXVth5fUCZANUtKBb4hPOYNQR4&hl=pt" async defer></script>
 
-<nav class="fixed w-full z-50 top-0 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-slate-200 text-base leading-normal" id="navbar">
-    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-20">
+<nav class="absolute md:fixed w-full z-50 top-0 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-slate-200 text-base leading-normal" id="navbar">    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-20">
         
         <a href="/" class="text-2xl font-bold tracking-tight logo-brand font-sans text-slate-900 no-underline hover:text-indigo-600 transition">
             Inbound <span class="text-indigo-600">Hub</span>
