@@ -97,6 +97,7 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
+            
                 
                 <a href="gerador-briefing.php" class="tool-card-dark group bg-slate-900 rounded-3xl p-8 border border-slate-800 shadow-xl relative overflow-hidden flex flex-col h-full z-10 block">
                     <div class="top-bar absolute top-0 left-0 w-full h-1.5 bg-indigo-500"></div>
@@ -178,6 +179,13 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="mt-14 text-center">
+                <a href="ferramentas.php" class="inline-flex items-center gap-2 text-indigo-600 font-bold hover:text-indigo-800 transition-colors uppercase tracking-widest text-sm border-b-2 border-indigo-200 hover:border-indigo-600 pb-1">
+                    Ver todas as ferramentas
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
                 
                 <a href="artigo-inbound.php" class="group bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 hover:border-blue-300 transition-colors duration-300 flex flex-col h-full block">
                     <div class="h-2 bg-blue-500 w-full"></div>
@@ -238,7 +246,12 @@
                         <div class="text-emerald-600 font-bold text-sm uppercase tracking-wide group-hover:translate-x-1 transition-transform">Ler Dossiê →</div>
                     </div>
                 </a>
-
+<div class="mt-14 text-center">
+                <a href="artigos.php" class="inline-flex items-center gap-2 text-indigo-600 font-bold hover:text-indigo-800 transition-colors uppercase tracking-widest text-sm border-b-2 border-indigo-200 hover:border-indigo-600 pb-1">
+                    Ler todos os artigos
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
             </div>
         </div>
     </section>
