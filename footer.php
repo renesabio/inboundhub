@@ -1,20 +1,47 @@
-<footer class="bg-white border-t border-slate-200 py-12 text-slate-500 font-sans text-base leading-normal">
-    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+<footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
         
-        <div class="mb-6 md:mb-0">
-            <a href="/" class="text-xl font-bold text-slate-900 tracking-tight block no-underline hover:text-indigo-600 transition">
-                Inbound <span class="text-indigo-600">Hub</span>
-            </a>
-            <p class="text-sm mt-2 mb-3">Conectando profissionais e compartilhando aprendizados.</p>
-            
-            <a href="https://www.linkedin.com/company/inbound-hub-oficial/" target="_blank" class="inline-flex items-center gap-1 text-sm font-bold text-[#0077b5] hover:underline no-underline">
-                Siga o Hub no LinkedIn <span>→</span>
-            </a>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <a href="/" class="text-2xl font-bold tracking-tight font-sans text-white no-underline hover:text-indigo-400 transition inline-block mb-4">
+                    Inbound <span class="text-indigo-500">Hub</span>
+                </a>
+                <p class="text-sm text-slate-400 leading-relaxed pr-4">
+                    O hub definitivo para profissionais de marketing e vendas evoluírem juntos.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">Acesso Rápido</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="artigos.php" class="hover:text-indigo-400 transition-colors">Artigos e Dossiês</a></li>
+                    <li><a href="ferramentas.php" class="hover:text-indigo-400 transition-colors">Ferramentas de Gestão</a></li>
+                    <li><a href="participar.php" class="hover:text-indigo-400 transition-colors">Entrar na Comunidade</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">Comunidade</h4>
+                <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                    Faça parte do grupo onde líderes e analistas debatem o futuro do Growth.
+                </p>
+                <a href="participar.php" class="text-indigo-400 font-bold hover:text-indigo-300 transition-colors text-sm flex items-center gap-1">
+                    Saiba mais <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
         </div>
 
-        <div class="text-sm">
-            <p class="mb-1">© 2026 Inbound Hub. Todos os direitos reservados.</p>
-            <p>Curadoria: <a href="https://www.linkedin.com/in/renesabio/" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium transition no-underline">Renê Sábio</a></p>
+        <div class="border-t border-slate-800 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-slate-500">
+                &copy; <?php echo date("Y"); ?> Inbound Hub. Todos os direitos reservados.
+            </p>
+            
+            <p class="text-xs text-slate-500 text-center md:text-right max-w-md">
+                Este site é protegido pelo reCAPTCHA e se aplicam a 
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="underline hover:text-slate-300 transition-colors">Política de Privacidade</a> e os 
+                <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" class="underline hover:text-slate-300 transition-colors">Termos de Serviço</a> do Google.
+            </p>
         </div>
+
     </div>
 </footer>
