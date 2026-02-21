@@ -7,7 +7,7 @@
                     Inbound <span class="text-indigo-500">Hub</span>
                 </a>
                 <p class="text-sm text-slate-400 leading-relaxed pr-4">
-                    O hub definitivo para profissionais de marketing e vendas evoluírem juntos.
+                    O hub definitivo para profissionais evoluírem juntos na prática.
                 </p>
             </div>
 
@@ -23,7 +23,7 @@
             <div>
                 <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">Comunidade</h4>
                 <p class="text-sm text-slate-400 leading-relaxed mb-4">
-                    Faça parte do grupo onde líderes e analistas debatem o futuro do Growth.
+                    Faça parte do grupo onde profissionais debatem as melhores estratégias e o futuro do Inbound.
                 </p>
                 <a href="participar.php" class="text-indigo-400 font-bold hover:text-indigo-300 transition-colors text-sm flex items-center gap-1">
                     Saiba mais <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
