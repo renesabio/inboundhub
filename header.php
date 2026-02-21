@@ -1,4 +1,5 @@
-<link rel="icon" type="image/png" href="favicon.png?v=2">
+<link rel="icon" type="image/png" href="favicon.png?v=3">
+<link rel="apple-touch-icon" href="favicon.png?v=3">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T99B7SCDSJ"></script>
 <script>
@@ -26,10 +27,10 @@
         </a>
         
         <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-500 font-sans">
-            <a href="artigos.html" class="hover:text-indigo-600 transition-colors no-underline">Artigos</a>
-            <a href="ferramentas.html" class="hover:text-indigo-600 transition-colors no-underline">Ferramentas</a>
+            <a href="artigos.php" class="hover:text-indigo-600 transition-colors no-underline">Artigos</a>
+            <a href="ferramentas.php" class="hover:text-indigo-600 transition-colors no-underline">Ferramentas</a>
             
-            <a href="participar.html" class="bg-indigo-600 text-white px-6 py-2.5 rounded-full font-bold hover:bg-indigo-700 transition shadow-md hover:shadow-lg hover:-translate-y-0.5 no-underline">
+            <a href="participar.php" class="bg-indigo-600 text-white px-6 py-2.5 rounded-full font-bold hover:bg-indigo-700 transition shadow-md hover:shadow-lg hover:-translate-y-0.5 no-underline">
                 Comunidade
             </a>
         </div>
@@ -41,10 +42,10 @@
 
     <div class="md:hidden hidden bg-white border-t border-slate-100 absolute w-full shadow-2xl" id="mobile-menu">
         <div class="px-4 pt-2 pb-6 space-y-2">
-            <a href="artigos.html" class="block px-4 py-3 text-base font-semibold text-slate-700 hover:text-indigo-600 hover:bg-indigo-50 rounded-xl transition-colors no-underline">Artigos</a>
-            <a href="ferramentas.html" class="block px-4 py-3 text-base font-semibold text-slate-700 hover:text-indigo-600 hover:bg-indigo-50 rounded-xl transition-colors no-underline">Ferramentas</a>
+            <a href="artigos.php" class="block px-4 py-3 text-base font-semibold text-slate-700 hover:text-indigo-600 hover:bg-indigo-50 rounded-xl transition-colors no-underline">Artigos</a>
+            <a href="ferramentas.php" class="block px-4 py-3 text-base font-semibold text-slate-700 hover:text-indigo-600 hover:bg-indigo-50 rounded-xl transition-colors no-underline">Ferramentas</a>
             <div class="pt-4 px-2">
-                <a href="participar.html" class="block w-full text-center bg-indigo-600 text-white font-bold px-6 py-4 rounded-xl hover:bg-indigo-700 transition-colors shadow-lg no-underline">
+                <a href="participar.php" class="block w-full text-center bg-indigo-600 text-white font-bold px-6 py-4 rounded-xl hover:bg-indigo-700 transition-colors shadow-lg no-underline">
                     Comunidade
                 </a>
             </div>
